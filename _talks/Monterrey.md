@@ -8,4 +8,4 @@ date: 2022-06-14
 location: "Monterrey, Mexico"
 ---
 
-Presentation on a feeder service with maximum headway constraints at mandatory stops.
+Summer school for young OR researchers. I also gave a presentation on a feeder service with maximum headway constraints at mandatory stops.
