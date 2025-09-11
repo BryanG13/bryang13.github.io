@@ -18,16 +18,6 @@ if [ ! -f "$PYTHON_SCRIPT" ]; then
   exit 1
 fi
 
-# Check if the markdown CV exists
-if [ ! -f "$CV_MARKDOWN" ]; then
-  echo "Error: Markdown CV not found at $CV_MARKDOWN"
-  exit 1
-fi
-
-# Run the Python script to convert markdown to JSON
-echo "Converting markdown CV to JSON..."
-python3 "$PYTHON_SCRIPT" --input "$CV_MARKDOWN" --output "$CV_JSON" --config "$CONFIG_FILE"
-
 # Check if the conversion was successful
 if [ $? -eq 0 ]; then
   echo "Successfully updated CV JSON file at $CV_JSON"
