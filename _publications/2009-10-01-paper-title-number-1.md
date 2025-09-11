@@ -1,14 +1,12 @@
 ---
-title: "Paper Title Number 1 test"
+title: "A column generation algorithm for the demand-responsive feeder service"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2022-column-generation-feeder
+excerpt: "This article introduces a column generation approach for optimizing the demand-responsive feeder service problem."
+date: 2022-05-01
+venue: "Networks"
+paperurl: "https://doi.org/10.1002/net.22095"
+citation: "Bryan David Galarza Montenegro, et al. (2022). 'A column generation algorithm for the demand-responsive feeder service.' *Networks*, 80(3), 22095. https://doi.org/10.1002/net.22095"
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+With the rise of smart cities, relevant passenger data can be collected to improve the quality of transport services. In this article, a demand-responsive feeder service is presented. A feeder service transports passengers from a low-demand area, like a suburban area, to a transportation hub, like a city center. The feeder service modeled in this article considers two sets of bus stops: mandatory stops and optional stops. Mandatory stops are always visited by a bus, while optional stops are only visited when a client nearby makes a request for transportation. This gives the service both flexibility and some predictability. To optimize the performance of the service, mathematical modeling techniques to improve the model's runtime are developed. It is concluded that a combination of column generation and the separation of sub-tour elimination constraints decreases the computing time of small and midsize instances significantly.
