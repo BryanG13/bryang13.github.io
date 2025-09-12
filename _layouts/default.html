@@ -47,17 +47,16 @@ layout: compress
         }
       }
 
-      /* Move Google Translate banner to bottom */
-      .goog-te-banner-frame.skiptranslate {
-        position: fixed !important;
-        bottom: 0 !important;
-        top: auto !important;
-        width: 100% !important;
-        border: none !important;
-        z-index: 9999;
+      /* Hide Google Translate top bar completely */
+      .goog-te-banner-frame.skiptranslate,
+      .goog-te-banner {
+        display: none !important;
+        visibility: hidden !important;
       }
+
       body {
-        top: 0px !important; /* don’t leave empty space at top */
+        top: 0px !important; /* remove the space it adds */
+        position: static !important;
       }
     </style>
   </head>
