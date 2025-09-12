@@ -7,5 +7,4 @@ venue: "The 23rd Conference of the International Federation of Operational Resea
 date: 2023-07-11
 location: "Santiago, Chile"
 ---
-
-Presentation of a real-time dynamic online feeder service, highlighting maximum headway constraints at mandatory stops.
+At [IFORS 23](https://www.ifors.org/wp-content/uploads/2023/11/IFORS-Proceedings-2023.pdf), I presented my research about a real-time dynamic online feeder service, highlighting maximum headway constraints at mandatory stops.

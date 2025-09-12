@@ -8,4 +8,4 @@ date: 2021-07-12
 location: "Athens, Greece"
 ---
 
-Presentation of a large neighbourhood search algorithm designed to optimize a demand-responsive feeder service.
+Presentation of a large neighbourhood search algorithm designed to optimize a demand-responsive feeder service at [EURO 31](https://www.euro-online.org/conf/admin/tmp/program-euro31.pdf).

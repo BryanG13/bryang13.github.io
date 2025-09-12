@@ -8,4 +8,4 @@ date: 2022-12-12
 location: "Buenos Aires, Argentina"
 ---
 
-Talk on enhancing demand-responsive feeder services through maximum headway constraints at mandatory stops.
+Presentation of working paper about enhancing demand-responsive feeder services through maximum headway constraints at mandatory stops, at [CLAIO 2022](https://claio2022.dc.uba.ar/).

@@ -8,4 +8,4 @@ date: 2020-01-31
 location: "Lille, France"
 ---
 
-Presentation of research on a demand-responsive feeder system combining mandatory and clustered optional bus stops.
+Presentation of research on a demand-responsive feeder system combining mandatory and clustered optional bus stops at [ORBEL 34](https://www.orbel.be/orbel34/progdetail.php?id=32#32).

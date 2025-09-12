@@ -8,4 +8,4 @@ date: 2022-09-13
 location: "Ghent, Belgium"
 ---
 
-Presentation of dynamic feeder service models with maximum headway constraints to improve service quality.
+Talk on dynamic feeder service models with maximum headway constraints to improve service quality at [ORBEL 36](https://www.orbel.be/orbel36/orbel36_book_of_abstracts_v3.pdf).
