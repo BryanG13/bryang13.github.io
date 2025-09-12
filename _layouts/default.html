@@ -16,8 +16,6 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
-
     <!-- Google Translate widget -->
     <div id="google_translate_element" style="text-align:center; margin: 20px 0;"></div>
     <script type="text/javascript">
@@ -30,6 +28,8 @@ layout: compress
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!-- End Google Translate widget -->
+
+    {{ content }}
 
     <div class="page__footer">
       <footer>
