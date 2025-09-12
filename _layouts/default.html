@@ -9,6 +9,19 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      /* Position translate widget in the top right */
+      #google_translate_element {
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        z-index: 9999;
+      }
+      .goog-te-gadget {
+        font-family: inherit;
+        font-size: 0.9rem;
+      }
+    </style>
   </head>
 
   <body>
@@ -19,11 +32,15 @@ layout: compress
     {{ content }}
 
     <!-- Google Translate widget -->
-    <div id="google_translate_element" style="text-align:center; margin: 20px 0;"></div>
+    <div id="google_translate_element"></div>
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
-          {pageLanguage: 'en', includedLanguages: 'nl,fr,de,es'},
+          {
+            pageLanguage: 'en',
+            includedLanguages: 'en,nl,fr,de,es', // added English back
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          },
           'google_translate_element'
         );
       }
