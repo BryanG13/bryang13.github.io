@@ -35,12 +35,12 @@ layout: compress
       .language-toggle button:hover {
         color: #007acc;
       }
-      /* Hide the top Google Translate banner */
+      /* Hide the Google Translate banner */
       .goog-te-banner-frame.skiptranslate {
         display: none !important;
       }
       body {
-        top: 0px !important;
+        bottom: 0px !important;
       }
     </style>
   </head>
@@ -55,10 +55,10 @@ layout: compress
     <!-- Custom language toggle -->
     <div class="language-toggle">
       <button onclick="translatePage('en')">EN</button>
+      <button onclick="translatePage('es')">ES</button>
       <button onclick="translatePage('nl')">NL</button>
       <button onclick="translatePage('fr')">FR</button>
       <button onclick="translatePage('de')">DE</button>
-      <button onclick="translatePage('es')">ES</button>
     </div>
 
     <!-- Google Translate API -->
@@ -90,7 +90,7 @@ layout: compress
           const banner = document.querySelector(".goog-te-banner-frame");
           if (banner) {
             banner.style.display = "none";
-            document.body.style.top = "0px";
+            document.body.style.bottom = "0px";
           }
         });
         observer.observe(document.body, { childList: true, subtree: true });
