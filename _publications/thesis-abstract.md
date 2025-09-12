@@ -6,7 +6,7 @@ permalink: /publication/2024-goldilocks-bus
 excerpt: "This PhD thesis abstract outlines the pursuit of optimal balance between neither too rigid nor too flexible services in demand-responsive bus service design."
 date: 2024-02-01
 venue: "4OR"
-paperurl: "files/abstract_thesis.pdf"
+paperurl: "https://bryang13.github.io/files/abstract_thesis.pdf"
 citation: 'Bryan David Galarza Montenegro. (2024). "Towards the Goldilocks Zone of demand-responsive bus services." <i>4OR</i>, 22. PhD Thesis Abstract. <a href="https://doi.org/10.1007/s10288-023-00546-4">https://doi.org/10.1007/s10288-023-00546-4</a>'
 ---
 
