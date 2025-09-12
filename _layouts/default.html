@@ -40,7 +40,7 @@ layout: compress
         display: none !important;
       }
       body {
-        bottom: 0px !important;
+        top: 0px !important;
       }
     </style>
   </head>
@@ -86,15 +86,15 @@ layout: compress
     <!-- Hide Google Translate banner dynamically -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const observer = new MutationObserver(() => {
-          const banner = document.querySelector(".goog-te-banner-frame");
-          if (banner) {
-            banner.style.display = "none";
-            document.body.style.bottom = "0px";
-          }
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
+      const observer = new MutationObserver(() => {
+        const banner = document.querySelector(".goog-te-banner-frame.skiptranslate");
+        if (banner) {
+          banner.style.display = "none";
+          document.body.style.top = "0px";
+        }
       });
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
     </script>
 
     <div class="page__footer">
