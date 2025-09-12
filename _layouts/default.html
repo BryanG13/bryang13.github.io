@@ -7,18 +7,6 @@ layout: compress
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
   <head>
-     <!-- Google Translate widget -->
-    <div id="google_translate_element" style="text-align:center; margin: 20px 0;"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {pageLanguage: 'en', includedLanguages: 'nl,fr,de,es'},
-          'google_translate_element'
-        );
-      }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <!-- End Google Translate widget -->
     {% include head.html %}
     {% include head/custom.html %}
   </head>
