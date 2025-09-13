@@ -1,7 +1,7 @@
 ---
 title: "Towards the Goldilocks Zone of demand-responsive bus services"
 collection: publications
-category: manuscripts
+category: thesis
 permalink: /publication/2024-goldilocks-bus
 excerpt: "This PhD thesis abstract outlines the pursuit of optimal balance between neither too rigid nor too flexible services in demand-responsive bus service design."
 date: 2024-02-01
