@@ -1,9 +1,9 @@
 ---
-title: "A demand-responsive feeder service with a maximum headway at mandatory stops"
+title: "14th Metaheuristics International Conference (MIC 2022)"
 collection: talks
 type: "Presentation"
 permalink: /talks/2022-mic
-venue: "14th Metaheuristics International Conference (MIC 2022)"
+venue: "Department of Architecture, Universita' degli studi di Catania"
 date: 2022-07-12
 location: "Ortigia-Syracusa, Italy"
 ---

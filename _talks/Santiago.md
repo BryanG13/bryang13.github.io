@@ -1,9 +1,9 @@
 ---
-title: "The real-time dynamic online feeder service with a maximum headway at mandatory stops"
+title: "The 23rd Conference of the International Federation of Operational Research Societies (IFORS 2023)"
 collection: talks
 type: "Presentation"
 permalink: /talks/2023-ifors
-venue: "The 23rd Conference of the International Federation of Operational Research Societies (IFORS 2023)"
+venue: "Departamento de Ingeniería Industrial y de Sistemas de la Pontificia Universidad Católica de Chile"
 date: 2023-07-11
 location: "Santiago, Chile"
 ---

@@ -1,9 +1,9 @@
 ---
-title: "A demand responsive feeder-system service with mandatory and clustered, optional bus stops"
+title: "34th Annual Conference of the Belgian Operations Research Society (ORBEL 34)"
 collection: talks
 type: "Presentation"
 permalink: /talks/2020-orbel34
-venue: "34th Annual Conference of the Belgian Operations Research Society (ORBEL 34)"
+venue: "Campus Cité scientifique, Centrale Lille"
 date: 2020-01-31
 location: "Lille, France"
 ---

@@ -1,9 +1,9 @@
 ---
-title: "A demand-responsive feeder service with mandatory stops and frequency constraints"
+title: "The Norwegian Operations Research Society (NORS 2021)"
 collection: talks
 type: "Presentation"
 permalink: /talks/2021-nors
-venue: "The Norwegian Operations Research Society (NORS 2021)"
+venue: "Norwegian School of Economics (NHH)"
 date: 2021-11-18
 location: "Bergen, Norway"
 ---

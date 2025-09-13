@@ -1,9 +1,9 @@
 ---
-title: "Towards better service quality with the dynamic feeder service with a maximum headway at mandatory stops"
+title: "XXI Latin Ibero-American Conference On Operations Research (CLAIO 2022)"
 collection: talks
 type: "Presentation"
 permalink: /talks/2022-claio
-venue: "XXI Latin Ibero-American Conference On Operations Research (CLAIO 2022)"
+venue: "Cero + Infinito" Building - Ciudad Universitaria"
 date: 2022-12-12
 location: "Buenos Aires, Argentina"
 ---
