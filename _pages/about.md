@@ -16,3 +16,4 @@ I hold a PhD in *Operations Research* from the **University of Antwerp**, where 
 My research interests lie in urban logistics, non-emergency medical transportation, and public transport. I am particularly drawn to metaheuristics, exact methods, and data-driven solutions.
 
 Outside of work, I enjoy photography, traveling, and discovering hidden places away from busy cities. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life.  
+
