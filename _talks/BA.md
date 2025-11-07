@@ -3,7 +3,7 @@ title: "XXI Latin Ibero-American Conference On Operations Research (CLAIO 2022)"
 collection: talks
 type: "Presentation"
 permalink: /talks/2022-claio
-venue: "Cero + Infinito" Building - Ciudad Universitaria"
+venue: "'Cero + Infinito' Building - Ciudad Universitaria"
 date: 2022-12-12
 location: "Buenos Aires, Argentina"
 ---
