@@ -1,5 +1,10 @@
 var addressPoints = [
   [
+    "14th Metaheuristics International Conference (MIC 2022)<br />Department of Architecture, Universita' degli studi di Catania; Syracuse, Italy",
+    37.0646139,
+    15.2907196
+  ],
+  [
     "31st European Conference on Operations Research (EURO 2021)<br />University Of West Attica; Athens, Greece",
     37.9755648,
     23.7348324
