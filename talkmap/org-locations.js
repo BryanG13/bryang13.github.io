@@ -35,6 +35,11 @@ var addressPoints = [
     4.3997081
   ],
   [
+    "Beta Symposium 2025<br />Conference Hotel Kontakt der Kontinenten; Soesterberg, The Netherlands",
+    52.1208994,
+    5.2836057
+  ],
+  [
     "36th Annual Conference of the Belgian Operations Research Society (ORBEL 36)<br />Gent Technology Campus (KU Leuven); Ghent, Belgium",
     51.0538286,
     3.7250121
