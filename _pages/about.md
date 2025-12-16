@@ -39,5 +39,101 @@ My research interests lie in:
 
 ## 🌍 Beyond Work
 
-Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life.  
+Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Here below, you can click to view a random photo I have taken!
+
+<div style="text-align: center; margin: 30px 0;">
+  <img id="randomPhoto" src="" alt="Random photo" style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
+  <p style="font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
+</div>
+
+<script>
+const photos = [
+  '/images/photos/DSC00254.JPG',
+  '/images/photos/DSC00372.JPG',
+  '/images/photos/DSC00405.JPG',
+  '/images/photos/DSC00502.JPG',
+  '/images/photos/DSC01058 (1).JPG',
+  '/images/photos/DSC01399.JPG',
+  '/images/photos/DSC02216.JPG',
+  '/images/photos/DSC02272.JPG',
+  '/images/photos/DSC02583.JPG',
+  '/images/photos/DSC02655.JPG',
+  '/images/photos/DSC03088.JPG',
+  '/images/photos/DSC03223-01~3.jpeg',
+  '/images/photos/DSC03282.JPG',
+  '/images/photos/DSC03302.JPG',
+  '/images/photos/DSC03331.JPG',
+  '/images/photos/DSC04060.JPG',
+  '/images/photos/DSC04082-01.jpeg',
+  '/images/photos/DSC04110-01.jpeg',
+  '/images/photos/DSC04168.JPG',
+  '/images/photos/DSC04185-01.jpeg',
+  '/images/photos/DSC04248.JPG',
+  '/images/photos/DSC04267-01.jpeg',
+  '/images/photos/DSC04333-01.jpeg',
+  '/images/photos/DSC04356-01.jpeg',
+  '/images/photos/DSC04387-01.jpeg',
+  '/images/photos/DSC04471.JPG',
+  '/images/photos/DSC04493-01-01.jpeg',
+  '/images/photos/DSC04663-01.jpeg',
+  '/images/photos/DSC04873-01-01.jpeg',
+  '/images/photos/DSC04915-01.jpeg',
+  '/images/photos/DSC04916.JPG',
+  '/images/photos/DSC05007-01.jpeg',
+  '/images/photos/DSC05357-01.jpeg',
+  '/images/photos/DSC05600.JPG',
+  '/images/photos/DSC05650-01.jpeg',
+  '/images/photos/DSC05733.JPG',
+  '/images/photos/DSC05965.JPG',
+  '/images/photos/DSC06044.JPG',
+  '/images/photos/DSC06069-01.jpeg',
+  '/images/photos/DSC06128-01.jpeg',
+  '/images/photos/DSC06245.JPG',
+  '/images/photos/DSC06322-01.jpeg',
+  '/images/photos/DSC06494-01-01-01.jpeg',
+  '/images/photos/DSC06603.JPG',
+  '/images/photos/DSC06819-01.jpeg',
+  '/images/photos/DSC06955.JPG',
+  '/images/photos/DSC07026-01.jpeg',
+  '/images/photos/DSC07039-01.jpeg',
+  '/images/photos/DSC07042-01.jpeg',
+  '/images/photos/DSC07079-01.jpeg',
+  '/images/photos/DSC07252.JPG',
+  '/images/photos/DSC07316-01.jpeg',
+  '/images/photos/DSC07421.JPG',
+  '/images/photos/DSC07438-01.jpeg',
+  '/images/photos/DSC07541-01.jpeg',
+  '/images/photos/DSC07717.JPG',
+  '/images/photos/DSC07725.JPG',
+  '/images/photos/DSC07729-01.jpeg',
+  '/images/photos/DSC07970-01.jpeg',
+  '/images/photos/DSC08015-01.jpeg',
+  '/images/photos/DSC08044-01-01.jpeg',
+  '/images/photos/DSC08195-01.jpeg',
+  '/images/photos/DSC08308-01.jpeg',
+  '/images/photos/DSC08313-01.jpeg',
+  '/images/photos/DSC08354-01.jpeg',
+  '/images/photos/DSC08794~2-01.jpeg',
+  '/images/photos/DSC09183-01.jpeg',
+  '/images/photos/DSC09314-01.jpeg',
+  '/images/photos/DSC09317-01.jpeg',
+  '/images/photos/DSC09790-01.jpeg',
+  '/images/photos/DSC09990~2.JPG'
+];
+
+let currentPhotoIndex = -1;
+
+function changePhoto() {
+  let newIndex;
+  do {
+    newIndex = Math.floor(Math.random() * photos.length);
+  } while (newIndex === currentPhotoIndex && photos.length > 1);
+  
+  currentPhotoIndex = newIndex;
+  document.getElementById('randomPhoto').src = photos[currentPhotoIndex];
+}
+
+// Load initial random photo when page loads
+window.addEventListener('DOMContentLoaded', changePhoto);
+</script>  
 
