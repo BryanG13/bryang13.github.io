@@ -153,16 +153,27 @@ const photos = [
   '/images/photos/UANight.jpg'
 ];
 
-let currentPhotoIndex = -1;
+let shuffledPhotos = [];
+let currentPhotoIndex = 0;
+let isShuffled = false;
+
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
 
 function changePhoto() {
-  let newIndex;
-  do {
-    newIndex = Math.floor(Math.random() * photos.length);
-  } while (newIndex === currentPhotoIndex && photos.length > 1);
+  if (!isShuffled) {
+    shuffledPhotos = shuffleArray(photos);
+    isShuffled = true;
+  }
   
-  currentPhotoIndex = newIndex;
-  document.getElementById('randomPhoto').src = photos[currentPhotoIndex];
+  document.getElementById('randomPhoto').src = shuffledPhotos[currentPhotoIndex];
+  currentPhotoIndex = (currentPhotoIndex + 1) % shuffledPhotos.length;
 }
 
 // Load initial random photo when page loads
