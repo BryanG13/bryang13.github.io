@@ -15,14 +15,16 @@ I have also served as the **Lead Operations Research Expert** 💼 at **Triptoma
 
 I hold a PhD 📚 in *Operations Research* from the **University of Antwerp**, where I conducted research on the design and optimization of [*semi-flexible bus services*](https://repository.uantwerpen.be/docman/irua/5e80f4/196398.pdf). I also have Master of Science degree in *Engineering Science: Operations Research and Industrial Engineering* from **Ghent University**.
 
-Over the years, I have published several research papers on optimization in intelligent transportation systems and collaborated closely with both academia and industry to bridge the gap between theory and application. My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical transportation, 🚍 public transportation, and 🔬 metaheuristics and exact optimization methods
+Over the years, I have published several research papers on optimization in intelligent transportation systems and collaborated closely with both academia and industry to bridge the gap between theory and application. 
+
+My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical transportation, 🚍 public transportation, and 🔬 metaheuristics and exact optimization methods
 
 ---
 
 🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Here below, you can click to view a random photo I have taken!
 
 <div style="text-align: center; margin: 30px 0;">
-  <img id="randomPhoto" src="" alt="Random photo" style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
+  <img id="randomPhoto" src="" alt="Click to start viewing my photography!" style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
   <p style="font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
 </div>
 
