@@ -22,8 +22,17 @@ Over the years, I have published several research papers on optimization in inte
 🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Here below, you can click to view a random photo I have taken!
 
 <div style="text-align: center; margin: 30px 0;">
-  <img id="randomPhoto" src="" alt="Random photo" style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
-  <p style="font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
+  <div id="photoPlaceholder" style="display: flex; align-items: center; justify-content: center; min-height: 400px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;" onclick="startPhotoViewer()">
+    <div style="text-align: center; color: white; padding: 40px;">
+      <svg style="width: 80px; height: 80px; margin-bottom: 20px;" fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+      </svg>
+      <h3 style="margin: 0 0 10px 0; font-size: 1.5em; font-weight: 600;">Click to Start Photo Gallery</h3>
+      <p style="margin: 0; font-size: 1em; opacity: 0.9;">View my photography from travels around the world</p>
+    </div>
+  </div>
+  <img id="randomPhoto" src="" alt="Random photo" style="display: none; max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
+  <p id="photoCaption" style="display: none; font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
 </div>
 
 <script>
@@ -181,6 +190,16 @@ function shuffleArray(array) {
   return shuffled;
 }
 
+function startPhotoViewer() {
+  // Hide the placeholder and show the photo viewer
+  document.getElementById('photoPlaceholder').style.display = 'none';
+  document.getElementById('randomPhoto').style.display = 'block';
+  document.getElementById('photoCaption').style.display = 'block';
+  
+  // Start the photo slideshow
+  changePhoto();
+}
+
 function changePhoto() {
   if (!isShuffled) {
     shuffledPhotos = shuffleArray(photos);
@@ -190,8 +209,5 @@ function changePhoto() {
   document.getElementById('randomPhoto').src = shuffledPhotos[currentPhotoIndex];
   currentPhotoIndex = (currentPhotoIndex + 1) % shuffledPhotos.length;
 }
-
-// Load initial random photo when page loads
-window.addEventListener('DOMContentLoaded', changePhoto);
 </script>  
 
