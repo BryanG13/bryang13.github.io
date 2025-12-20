@@ -21,8 +21,9 @@ My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical t
 
 ---
 
-🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Here below, you can click to view a random photo I have taken!
+🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Here below, you can click to view a random photo I have taken! 
 
+Keep clicking on a picture to view more:
 <div style="text-align: center; margin: 30px 0;">
   <img id="randomPhoto" src="" alt="Click to start viewing my photography!" style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
   <p id="photoCaption" style="font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
