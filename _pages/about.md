@@ -228,6 +228,6 @@ window.changePhoto = changePhoto;
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('photoPlaceholder').addEventListener('click', startPhotoViewer);
   document.getElementById('randomPhoto').addEventListener('click', changePhoto);
-{% endraw %}
 });
+{% endraw %}
 </script>
