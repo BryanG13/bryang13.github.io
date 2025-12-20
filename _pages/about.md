@@ -35,6 +35,7 @@ Over the years, I have published several research papers on optimization in inte
   <p id="photoCaption" style="display: none; font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
 </div>
 
+{% raw %}
 <script type="text/javascript">
 const photos = [
   '/images/photos/DSC00031.JPG',
@@ -228,4 +229,5 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('photoPlaceholder').addEventListener('click', startPhotoViewer);
   document.getElementById('randomPhoto').addEventListener('click', changePhoto);
 });
+{% endraw %}
 </script>
