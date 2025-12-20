@@ -22,7 +22,7 @@ Over the years, I have published several research papers on optimization in inte
 🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Here below, you can click to view a random photo I have taken!
 
 <div style="text-align: center; margin: 30px 0;">
-  <div id="photoPlaceholder" style="display: flex; align-items: center; justify-content: center; min-height: 100px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;" onclick="startPhotoViewer()">
+  <div id="photoPlaceholder" style="display: flex; align-items: center; justify-content: center; min-height: 100px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;">
     <div style="text-align: center; color: white; padding: 10px 10px;">
       <svg style="width: 20px; height: 20px; margin-bottom: 5px;" fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
@@ -31,7 +31,7 @@ Over the years, I have published several research papers on optimization in inte
       <p style="margin: 0; font-size: 0.5em; opacity: 0.9;">View my photography</p>
     </div>
   </div>
-  <img id="randomPhoto" src="" alt="Random photo" style="display: none; max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
+  <img id="randomPhoto" src="" alt="Random photo" style="display: none; max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <p id="photoCaption" style="display: none; font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
 </div>
 
@@ -220,8 +220,12 @@ function changePhoto() {
   }
 }
 
-// Make functions globally available
+// Make functions globally available and attach event listeners
 window.startPhotoViewer = startPhotoViewer;
 window.changePhoto = changePhoto;
-</script>  
 
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('photoPlaceholder').addEventListener('click', startPhotoViewer);
+  document.getElementById('randomPhoto').addEventListener('click', changePhoto);
+});
+</script>
