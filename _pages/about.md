@@ -168,7 +168,8 @@ const photos = [
   { src: '/images/photos/PXL_20220201_084959038~2-01.jpeg', caption: 'Snowy Cappadocia' },
   { src: '/images/photos/PXL_20220201_152844202.NIGHT-01.jpeg', caption: 'Snowy village' },
   { src: '/images/photos/PXL_20220620_004809949-01.jpeg', caption: 'Monterrey' },
-  { src: '/images/photos/UANight.jpg', caption: 'Hof van Lieren, University of Antwerp' }
+  { src: '/images/photos/UANight.jpg', caption: 'Hof van Lieren, University of Antwerp' },
+  { src: '/images/photos/DSC00298.JPG', caption: 'Night market'}
 ];
 
 let shuffledPhotos = [];
