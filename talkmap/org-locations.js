@@ -35,6 +35,11 @@ var addressPoints = [
     4.3997081
   ],
   [
+    "CORE UC Louvain Seminar<br />Louvain Institute of Data Analysis and Modeling in economics and statistics; Louvain-la-Neuve, Belgium",
+    50.6740673,
+    4.6138095
+  ],
+  [
     "Beta Symposium 2025<br />Conference Hotel Kontakt der Kontinenten; Soesterberg, The Netherlands",
     52.1208994,
     5.2836057
