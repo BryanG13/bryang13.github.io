@@ -25,6 +25,11 @@ var addressPoints = [
     -58.3887904
   ],
   [
+    "ORBEL 40<br />Faculty of Economics and Business; Leuven, Belgium",
+    50.879202,
+    4.7011675
+  ],
+  [
     "The 23rd Conference of the International Federation of Operational Research Societies (IFORS 2023)<br />Departamento de Ingenier\u00eda Industrial y de Sistemas de la Pontificia Universidad Cat\u00f3lica de Chile; Santiago, Chile",
     -33.4377756,
     -70.6504502

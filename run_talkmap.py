@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+# Wrapper script to run talkmap with proper imports
+import sys
+import glob
+import getorg
+from geopy import Nominatim
+from geopy.exc import GeocoderTimedOut
+import frontmatter
+
+# Set the default timeout, in seconds
+TIMEOUT = 5
+
+# Collect the Markdown files
+g = glob.glob("_talks/*.md")
+
+# Prepare to geolocate
+geocoder = Nominatim(user_agent="academicpages.github.io")
+location_dict = {}
+location = ""
+permalink = ""
+title = ""
+
+# Perform geolocation
+for file in g:
+    # Read the file
+    with open(file, 'r', encoding='utf-8') as f:
+        data = frontmatter.load(f)
+    
+    data_dict = dict(data)
+
+    # Press on if the location is not present
+    if 'location' not in data_dict:
+        continue
+
+    # Prepare the description
+    title = data_dict.get('title', '').strip()
+    venue = data_dict.get('venue', '').strip()
+    location = data_dict.get('location', '').strip()
+    description = f"{title}<br />{venue}; {location}"
+
+    # Geocode the location and report the status
+    try:
+        location_dict[description] = geocoder.geocode(location, timeout=TIMEOUT)
+        print(description, location_dict[description])
+    except ValueError as ex:
+        print(f"Error: geocode failed on input {location} with message {ex}")
+    except GeocoderTimedOut as ex:
+        print(f"Error: geocode timed out on input {location} with message {ex}")
+    except Exception as ex:
+        print(f"An unhandled exception occurred while processing input {location} with message {ex}")
+
+# Save the map
+m = getorg.orgmap.create_map_obj()
+getorg.orgmap.output_html_cluster_map(location_dict, folder_name="talkmap", hashed_usernames=False)
+print("\nTalkmap successfully generated!")
