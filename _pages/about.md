@@ -9,7 +9,7 @@ redirect_from:
 
 Hi, I'm ***Bryan David Galarza Montenegro***. I'm an Operations Research Expert 👨🏻‍💻 with a strong interest in designing state-of-the-art algorithms that improve decision-making in real-world systems. My career has been shaped by a fascination for complex optimization challenges, especially those that impact transportation, logistics, and healthcare.
 
-I am currently a **postdoctoral researcher** 🎓 at the [**ANT/OR**](https://www.uantwerpen.be/en/research-groups/ant-or/) research group in the **University of Antwerp**. Here, I work on healthcare transportation research on and the [**STRAUSS**](https://www.kuleuven.be/lim/research/projects/strauss) project, which focuses on sustainable urban logistics and the development of innovative solutions to reduce the environmental impact of city freight flows.
+I am currently a **postdoctoral researcher** 🎓 at the [**ANT/OR**](https://www.uantwerpen.be/en/research-groups/ant-or/) research group in the **University of Antwerp**. Here, I work on healthcare transportation research and on the [**STRAUSS**](https://www.kuleuven.be/lim/research/projects/strauss) project, which focuses on sustainable urban logistics and the development of innovative solutions to reduce the environmental impact of city freight flows.
 
 I have also served as the **Lead Operations Research Expert** 💼 at **Triptomatic**, contributing to a **VLAIO**-funded *development project*: [*AI-powered Dispatching*](https://triptomatic.com/en-be/nemt#dispatching). In this role, I lead research, development and implementation on combinatorial optimization methods to make on-demand healthcare transportation more intelligent, efficient, and scalable. In **Atlas Copco**, I also served as an improvement consultant for the packaging policy of compressor parts.
 
@@ -169,7 +169,18 @@ const photos = [
   { src: '/images/photos/PXL_20220201_152844202.NIGHT-01.jpeg', caption: 'Snowy village' },
   { src: '/images/photos/PXL_20220620_004809949-01.jpeg', caption: 'Monterrey' },
   { src: '/images/photos/UANight.jpg', caption: 'Hof van Lieren, University of Antwerp' },
-  { src: '/images/photos/DSC00298.JPG', caption: 'Night market'}
+  { src: '/images/photos/DSC00298.JPG', caption: 'Night market'},
+  { src: '/images/photos/Chimbo.JPG', caption: 'Chimborazo, Ecuador' },
+  { src: '/images/photos/DSC08655.JPG', caption: 'Cajas Park, Ecuador' },
+  { src: '/images/photos/DSC07989.JPG', caption: 'Pululahua, Ecuador' },
+  { src: '/images/photos/IMG_1548.JPG', caption: 'Nevados in Ecuador' },
+  { src: '/images/photos/IMG_1559.JPG', caption: 'Cuicocha lake in Ecuador' },
+  { src: '/images/photos/IMG_1565.JPG', caption: 'Imbabura volcano, Ecuador' },
+  { src: '/images/photos/IMG_1637.JPG', caption: 'Cajas viewpoint, Ecuador' },
+  { src: '/images/photos/IMG_1645.JPG', caption: 'Ingapirca, Ecuador' },
+  { src: '/images/photos/IMG_1654.JPG', caption: 'Canyon near Chimborazo' },
+  { src: '/images/photos/IMG_1849.JPG', caption: 'NY from the sky' },
+  { src: '/images/photos/IMG_1856.JPG', caption: 'East coast views' }
 ];
 
 let shuffledPhotos = [];
