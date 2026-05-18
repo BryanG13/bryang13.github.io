@@ -180,7 +180,20 @@ const photos = [
   { src: '/images/photos/IMG_1645.JPG', caption: 'Ingapirca, Ecuador' },
   { src: '/images/photos/IMG_1654.JPG', caption: 'Canyon near Chimborazo' },
   { src: '/images/photos/IMG_1849.JPG', caption: 'NY from the sky' },
-  { src: '/images/photos/IMG_1856.JPG', caption: 'East coast views' }
+  { src: '/images/photos/IMG_1856.JPG', caption: 'East coast views' },
+  { src: '/images/photos/D7E5438F-A7E7-4D26-8B10-DF4E354CE45E.JPG', caption: 'Old and New' },
+  { src: '/images/photos/IMG_3302.JPG', caption: 'Calmness in Xiping' },
+  { src: '/images/photos/IMG_3333.JPG', caption: 'Views of Yangshuo' },
+  { src: '/images/photos/IMG_3335.JPG', caption: 'Ruyi Peak' },
+  { src: '/images/photos/IMG_3340.JPG', caption: 'Hike in Southern China' },
+  { src: '/images/photos/IMG_3365.JPG', caption: 'Dong Village' },
+  { src: '/images/photos/IMG_3376.JPG', caption: 'Rice terraces' },
+  { src: '/images/photos/IMG_3377.JPG', caption: 'Little village in the mountain' },
+  { src: '/images/photos/IMG_3384.JPG', caption: 'Urbanism' },
+  { src: '/images/photos/IMG_3405.JPG', caption: 'Nightlife in Guiyang' },
+  { src: '/images/photos/IMG_3415.JPG', caption: 'Guiyang scenes' },
+  { src: '/images/photos/IMG_3437.JPG', caption: 'Miao village' },
+  { src: '/images/photos/IMG_3440.JPG', caption: 'Dusk' }
 ];
 
 let shuffledPhotos = [];
