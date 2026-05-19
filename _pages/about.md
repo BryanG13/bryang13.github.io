@@ -9,15 +9,15 @@ redirect_from:
 
 Hi, I'm ***Bryan David Galarza Montenegro***. I'm an Operations Research Expert 👨🏻‍💻 with a strong interest in designing state-of-the-art algorithms that improve decision-making in real-world systems. My career has been shaped by a fascination for complex optimization challenges, especially those that impact transportation, logistics, and healthcare.
 
-I am currently a **postdoctoral researcher** 🎓 at the [**ANT/OR**](https://www.uantwerpen.be/en/research-groups/ant-or/) research group in the **University of Antwerp**. Here, I work on healthcare transportation research and on the [**STRAUSS**](https://www.kuleuven.be/lim/research/projects/strauss) project, which focuses on sustainable urban logistics and the development of innovative solutions to reduce the environmental impact of city freight flows.
+I am currently a **postdoctoral researcher** 🎓 at the [**ANT/OR**](https://www.uantwerpen.be/en/research-groups/ant-or/) research group at the **University of Antwerp**. Here, I work on healthcare transportation research and on the [**STRAUSS**](https://www.kuleuven.be/lim/research/projects/strauss) project, which focuses on sustainable urban logistics and the development of innovative solutions to reduce the environmental impact of city freight flows.
 
-I have also served as the **Lead Operations Research Expert** 💼 at **Triptomatic**, contributing to a **VLAIO**-funded *development project* (an applied research project): [*AI-powered Dispatching*](https://triptomatic.com/en-be/nemt#dispatching). In this role, I lead research, development and implementation on combinatorial optimization methods to make on-demand healthcare transportation more intelligent, efficient, and scalable. In **Atlas Copco**, I also served as an improvement consultant for the packaging policy of compressor parts.
+I have also served as the **Lead Operations Research Expert** 💼 at **Triptomatic**, contributing to a **VLAIO**-funded *development project* (an applied research project): [*AI-powered Dispatching*](https://triptomatic.com/en-be/nemt#dispatching). In this role, I led research, development and implementation on combinatorial optimization methods to make on-demand healthcare transportation more intelligent, efficient, and scalable. At **Atlas Copco**, I also served as an improvement consultant for the packaging policy of compressor parts.
 
-I hold a PhD 📚 in *Operations Research* from the **University of Antwerp**, where I conducted research on the design and optimization of [*semi-flexible bus services*](https://repository.uantwerpen.be/docman/irua/5e80f4/196398.pdf). I also have Master of Science degree in *Engineering Science: Operations Research and Industrial Engineering* from **Ghent University**.
+I hold a PhD 📚 in *Operations Research* from the **University of Antwerp**, where I conducted research on the design and optimization of [*semi-flexible bus services*](https://repository.uantwerpen.be/docman/irua/5e80f4/196398.pdf). I also have a Master of Science degree in *Engineering Science: Operations Research and Industrial Engineering* from **Ghent University**.
 
 Over the years, I have published several research papers on optimization in intelligent transportation systems and collaborated closely with both academia and industry to bridge the gap between theory and application. 
 
-My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical transportation, 🚍 public transportation, and 🔬 metaheuristics and exact optimization methods
+My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical transportation, 🚍 public transportation, and 🔬 metaheuristics and exact optimization methods.
 
 ---
 
@@ -47,7 +47,7 @@ const photos = [
   { src: '/images/photos/DSC01580.JPG', caption: 'Mosque near sunset' },
   { src: '/images/photos/DSC01887.JPG', caption: 'Singapore skyline' },
   { src: '/images/photos/DSC01936.JPG', caption: 'Chinese temple in Singapore' },
-  { src: '/images/photos/DSC02041.JPG', caption: 'TeamLabs exhibition' },
+  { src: '/images/photos/DSC02041.JPG', caption: 'teamLab exhibition' },
   { src: '/images/photos/DSC02089.JPG', caption: 'Neighbour\'s cat' },
   { src: '/images/photos/DSC02093.JPG', caption: 'Dalmatian pelicans' },
   { src: '/images/photos/DSC02216.JPG', caption: 'Lemur' },
@@ -91,7 +91,7 @@ const photos = [
   { src: '/images/photos/DSC05120-01.jpeg', caption: 'Sunset' },
   { src: '/images/photos/DSC05168_1.JPG', caption: 'Urbanisation' },
   { src: '/images/photos/DSC05357-01.jpeg', caption: 'Cherry blossoms at sunset' },
-  { src: '/images/photos/DSC05384.JPG', caption: 'A transformers movie was filmed here' },
+  { src: '/images/photos/DSC05384.JPG', caption: 'A Transformers movie was filmed here' },
   { src: '/images/photos/DSC05397.JPG', caption: 'Village in Busan' },
   { src: '/images/photos/DSC05422.JPG', caption: 'Wulong' },
   { src: '/images/photos/DSC05434.JPG', caption: 'Cave waterfall' },
@@ -100,17 +100,17 @@ const photos = [
   { src: '/images/photos/DSC05600.JPG', caption: 'Bay of Chongqing' },
   { src: '/images/photos/DSC05650-01.jpeg', caption: 'Spring in Japan' },
   { src: '/images/photos/DSC05738.JPG', caption: 'Hongyadong' },
-  { src: '/images/photos/DSC05815.JPG', caption: 'Forbidden city at night' },
-  { src: '/images/photos/DSC05849.JPG', caption: 'The great wall' },
+  { src: '/images/photos/DSC05815.JPG', caption: 'Forbidden City at night' },
+  { src: '/images/photos/DSC05849.JPG', caption: 'The Great Wall' },
   { src: '/images/photos/DSC05967.JPG', caption: 'Guess where' },
-  { src: '/images/photos/DSC06044.JPG', caption: 'Forbidden city' },
+  { src: '/images/photos/DSC06044.JPG', caption: 'Forbidden City' },
   { src: '/images/photos/DSC06069-01.jpeg', caption: 'Shinjuku' },
   { src: '/images/photos/DSC06108.JPG', caption: 'Close-up' },
   { src: '/images/photos/DSC06114.JPG', caption: 'Bee' },
   { src: '/images/photos/DSC06117.JPG', caption: 'Flowers' },
-  { src: '/images/photos/DSC06128-01.jpeg', caption: 'Tokyo tower' },
+  { src: '/images/photos/DSC06128-01.jpeg', caption: 'Tokyo Tower' },
   { src: '/images/photos/DSC06142.JPG', caption: 'Duck in Bazel, Belgium' },
-  { src: '/images/photos/DSC06206~2-01.jpeg', caption: 'Famous view point of Fuji-san' },
+  { src: '/images/photos/DSC06206~2-01.jpeg', caption: 'Famous viewpoint of Fuji-san' },
   { src: '/images/photos/DSC06245.JPG', caption: 'Fuji in spring' },
   { src: '/images/photos/DSC06322-01.jpeg', caption: 'Fuji at sundown' },
   { src: '/images/photos/DSC06409.JPG', caption: 'Reflecting ...' },
@@ -134,7 +134,7 @@ const photos = [
   { src: '/images/photos/DSC07341-01.jpeg', caption: 'Valle de los Chillos' },
   { src: '/images/photos/DSC07421.JPG', caption: 'Belgium from above' },
   { src: '/images/photos/DSC07438-01.jpeg', caption: 'Lagoon in Ecuador' },
-  { src: '/images/photos/DSC07510.JPG', caption: 'Koln sunset' },
+  { src: '/images/photos/DSC07510.JPG', caption: 'Köln sunset' },
   { src: '/images/photos/DSC07541-01.jpeg', caption: 'Wawa Pichincha' },
   { src: '/images/photos/DSC07682-01.jpeg', caption: 'Ecuadorian flowers' },
   { src: '/images/photos/DSC07688.JPG', caption: 'Koblenz views' },
@@ -149,8 +149,8 @@ const photos = [
   { src: '/images/photos/DSC08095-01.jpeg', caption: 'Humidity 100%' },
   { src: '/images/photos/DSC08195-01.jpeg', caption: 'Tranquil sunsets' },
   { src: '/images/photos/DSC08213-01.jpeg', caption: 'Sunset in Koh Phangan' },
-  { src: '/images/photos/DSC08308-01.jpeg', caption: 'Sand bar from above' },
-  { src: '/images/photos/DSC08313-01.jpeg', caption: 'Sand bar' },
+  { src: '/images/photos/DSC08308-01.jpeg', caption: 'Sandbar from above' },
+  { src: '/images/photos/DSC08313-01.jpeg', caption: 'Sandbar' },
   { src: '/images/photos/DSC08354-01.jpeg', caption: 'Calm waters' },
   { src: '/images/photos/DSC08478-01.jpeg', caption: 'Golden temples' },
   { src: '/images/photos/DSC08637.JPG', caption: 'Friend' },
@@ -188,7 +188,7 @@ const photos = [
   { src: '/images/photos/IMG_3340.JPG', caption: 'Hike in Southern China' },
   { src: '/images/photos/IMG_3365.JPG', caption: 'Dong Village' },
   { src: '/images/photos/IMG_3376.JPG', caption: 'Rice terraces' },
-  { src: '/images/photos/IMG_3377.JPG', caption: 'Little village in the mountain' },
+  { src: '/images/photos/IMG_3377.JPG', caption: 'Little village in the mountains' },
   { src: '/images/photos/IMG_3384.JPG', caption: 'Urbanism' },
   { src: '/images/photos/IMG_3405.JPG', caption: 'Nightlife in Guiyang' },
   { src: '/images/photos/IMG_3415.JPG', caption: 'Guiyang scenes' },
