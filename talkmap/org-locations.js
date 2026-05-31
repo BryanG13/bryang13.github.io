@@ -1,8 +1,8 @@
 var addressPoints = [
   [
     "14th Metaheuristics International Conference (MIC 2022)<br />Department of Architecture, Universita' degli studi di Catania; Syracuse, Italy",
-    37.0646139,
-    15.2907196
+    37.0315752,
+    15.2124277
   ],
   [
     "31st European Conference on Operations Research (EURO 2021)<br />University Of West Attica; Athens, Greece",
@@ -25,14 +25,9 @@ var addressPoints = [
     -58.3887904
   ],
   [
-    "ORBEL 40<br />Faculty of Economics and Business; Leuven, Belgium",
-    50.879202,
-    4.7011675
-  ],
-  [
     "The 23rd Conference of the International Federation of Operational Research Societies (IFORS 2023)<br />Departamento de Ingenier\u00eda Industrial y de Sistemas de la Pontificia Universidad Cat\u00f3lica de Chile; Santiago, Chile",
-    -33.4377756,
-    -70.6504502
+    -33.4376995,
+    -70.6510671
   ],
   [
     "ORBEL 35 \u2013 Corona Sessions: Public Transportation<br />Online; Antwerp, Belgium",
