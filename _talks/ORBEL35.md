@@ -1,7 +1,8 @@
 ---
 title: "ORBEL 35 – Corona Sessions: Public Transportation"
 collection: talks
-type: "Presentation"
+type: "Conference Presentation"
+category: "conference"
 permalink: /talks/2021-orbel35
 venue: "Online"
 date: 2021-01-29

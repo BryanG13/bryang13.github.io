@@ -1,7 +1,8 @@
 ---
 title: "CORE UC Louvain Seminar"
 collection: talks
-type: "Presentation"
+type: "Invited Seminar"
+category: "invited"
 permalink: /talks/2023-coreUCL
 venue: "Louvain Institute of Data Analysis and Modeling in economics and statistics"
 date: 2026-01-15

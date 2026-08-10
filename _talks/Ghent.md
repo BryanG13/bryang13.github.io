@@ -1,7 +1,8 @@
 ---
 title: "36th Annual Conference of the Belgian Operations Research Society (ORBEL 36)"
 collection: talks
-type: "Presentation"
+type: "Conference Presentation"
+category: "conference"
 permalink: /talks/2022-orbel36
 venue: "Gent Technology Campus (KU Leuven)"
 date: 2022-09-13

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Conference Presentations"
+title: "Talks"
 permalink: /talks/
 author_profile: true
 ---
@@ -11,6 +11,21 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
+{% assign invited_talks = site.talks | where: "category", "invited" | sort: "date" | reverse %}
+{% assign conferences = site.talks | where: "category", "conference" | sort: "date" | reverse %}
+{% assign summer_schools = site.talks | where: "category", "summer_school" | sort: "date" | reverse %}
+
+<h2>Invited Seminars</h2>
+{% for post in invited_talks %}
+  {% include archive-single-talk.html %}
+{% endfor %}
+
+<h2>Conferences</h2>
+{% for post in conferences %}
+  {% include archive-single-talk.html %}
+{% endfor %}
+
+<h2>Summer Schools</h2>
+{% for post in summer_schools %}
   {% include archive-single-talk.html %}
 {% endfor %}

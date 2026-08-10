@@ -5,6 +5,11 @@ var addressPoints = [
     15.2124277
   ],
   [
+    "International Conference on Intelligent Transportation Engineering (ICITE 2019)<br />National University of Singapore (NUS); Singapore",
+    1.357107,
+    103.8194992
+  ],
+  [
     "31st European Conference on Operations Research (EURO 2021)<br />University Of West Attica; Athens, Greece",
     37.9755648,
     23.7348324
@@ -38,6 +43,11 @@ var addressPoints = [
     "CORE UC Louvain Seminar<br />Louvain Institute of Data Analysis and Modeling in economics and statistics; Louvain-la-Neuve, Belgium",
     50.6740673,
     4.6138095
+  ],
+  [
+    "KU Leuven CIB Internal Seminar<br />Centre for Industrial Management / Traffic & Infrastructure (CIB), KU Leuven; Leuven, Belgium",
+    50.879202,
+    4.7011675
   ],
   [
     "Beta Symposium 2025<br />Conference Hotel Kontakt der Kontinenten; Soesterberg, The Netherlands",

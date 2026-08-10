@@ -1,7 +1,8 @@
 ---
 title: "Latin Ibero-American Summer School On Operations Research (ELAVIO 2022)"
 collection: talks
-type: "Summer School and Presentation"
+type: "Summer School"
+category: "summer_school"
 permalink: /talks/2022-elavio
 venue: "Tecnológico de Monterrey"
 date: 2022-06-14

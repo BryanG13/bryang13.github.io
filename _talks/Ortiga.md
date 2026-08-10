@@ -1,7 +1,8 @@
 ---
 title: "14th Metaheuristics International Conference (MIC 2022)"
 collection: talks
-type: "Presentation"
+type: "Conference Presentation"
+category: "conference"
 permalink: /talks/2022-mic
 venue: "Department of Architecture, Universita' degli studi di Catania"
 date: 2022-07-12

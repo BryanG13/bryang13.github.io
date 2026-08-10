@@ -1,7 +1,8 @@
 ---
 title: "Beta Symposium 2025"
 collection: talks
-type: "Presentation"
+type: "Conference Presentation"
+category: "conference"
 permalink: /talks/2025-beta
 venue: "Conference Hotel Kontakt der Kontinenten"
 date: 2025-11-13

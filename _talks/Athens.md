@@ -1,7 +1,8 @@
 ---
 title: "31st European Conference on Operations Research (EURO 2021)"
 collection: talks
-type: "Presentation"
+type: "Conference Presentation"
+category: "conference"
 permalink: /talks/2021-euro
 venue: "University Of West Attica"
 date: 2021-07-12
