@@ -1,5 +1,5 @@
 ---
-title: "KU Leuven CIB Internal Seminar"
+title: "KU Leuven CIB Internal Seminars"
 collection: talks
 type: "Invited Seminar"
 category: "invited"

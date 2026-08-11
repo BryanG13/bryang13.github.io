@@ -9,4 +9,4 @@ date: 2019-09-05
 location: "Singapore"
 ---
 
-I attended the [ICITE 2019](https://icite.net/) conference on intelligent transportation engineering at the National University of Singapore.
+I attended the [ICITE 2019](https://www.icite.org/icite2019.html) conference on intelligent transportation engineering at the National University of Singapore.
