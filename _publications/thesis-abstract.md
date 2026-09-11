@@ -12,7 +12,7 @@ paperurl: "https://bryang13.github.io/files/abstract_thesis.pdf"
 citation: 'Bryan David Galarza Montenegro. (2024). "Towards the Goldilocks Zone of demand-responsive bus services." <i>4OR</i>, 22. PhD Thesis Abstract. <a href="https://doi.org/10.1007/s10288-023-00546-4">https://doi.org/10.1007/s10288-023-00546-4</a>'
 ---
 
-<img src="/files/phone.jpg" alt="Thesis abstract" style="display: block; width: 75%; height: auto; margin: 0 auto;">
+<img src="/files/phone.jpg" alt="Thesis abstract" style="display: block; width: 75%; height: auto; margin: 0 auto; border-radius: 8px;">
 
 
 This is a thesis abstract published in **4OR**. The thesis outlines the pursuit of optimal balance between neither too rigid nor too flexible services in demand-responsive bus service design.
