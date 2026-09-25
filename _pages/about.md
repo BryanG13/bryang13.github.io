@@ -25,7 +25,7 @@ My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical t
 
 Keep clicking on a picture to view more:
 <div style="text-align: center; margin: 30px 0;">
-  <img id="randomPhoto" src="" alt="Click to start viewing my photography!" style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
+  <img id="randomPhoto" src="{{ '/images/500x300.png' | relative_url }}" alt="Loading a random photograph..." style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
   <p id="photoCaption" style="font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
 </div>
 
@@ -193,6 +193,10 @@ const photos = [
   { src: '/images/photos/IMG_3440.JPG', caption: 'Dusk' }
 ];
 
+const randomPhoto = document.getElementById('randomPhoto');
+const photoCaption = document.getElementById('photoCaption');
+const fallbackPhoto = '{{ '/images/500x300.png' | relative_url }}';
+
 let shuffledPhotos = [];
 let currentPhotoIndex = 0;
 let isShuffled = false;
@@ -211,20 +215,24 @@ function changePhoto() {
     shuffledPhotos = shuffleArray(photos);
     isShuffled = true;
   }
-  
+
   const currentPhoto = shuffledPhotos[currentPhotoIndex];
-  document.getElementById('randomPhoto').src = currentPhoto.src;
-  
-  const captionElement = document.getElementById('photoCaption');
-  if (currentPhoto.caption) {
-    captionElement.textContent = currentPhoto.caption;
-  } else {
-    captionElement.textContent = 'Click the photo to see another one!';
-  }
-  
+  randomPhoto.onerror = () => {
+    randomPhoto.onerror = null;
+    randomPhoto.alt = 'Photo unavailable';
+    randomPhoto.src = fallbackPhoto;
+    photoCaption.textContent = 'Photo unavailable';
+  };
+  randomPhoto.alt = currentPhoto.caption || 'Random photograph';
+  randomPhoto.src = currentPhoto.src;
+  photoCaption.textContent = currentPhoto.caption || 'Click the photo to see another one!';
+
   currentPhotoIndex = (currentPhotoIndex + 1) % shuffledPhotos.length;
 }
 
-// Load initial random photo when page loads
-window.addEventListener('DOMContentLoaded', changePhoto);
+if (randomPhoto && photoCaption) {
+  changePhoto();
+} else {
+  window.addEventListener('DOMContentLoaded', changePhoto, { once: true });
+}
 </script>  
