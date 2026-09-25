@@ -72,7 +72,6 @@ const photos = [
   { src: '/images/photos/DSC04185-01.jpeg', caption: 'Peruvian scapes' },
   { src: '/images/photos/DSC04226.JPG', caption: 'Yellow Mountain, China' },
   { src: '/images/photos/DSC04248.JPG', caption: 'Famous Tree' },
-  { src: '/images/photos/DSC04267-01.jpeg', caption: 'Cusco viewpoint' },
   { src: '/images/photos/DSC04281-01.jpeg', caption: 'Cusco, Peru' },
   { src: '/images/photos/DSC04333-01.jpeg', caption: 'Humantay Lake' },
   { src: '/images/photos/DSC04356-01.jpeg', caption: 'Salcantay, Peru' },
@@ -187,12 +186,10 @@ const photos = [
   { src: '/images/photos/IMG_3335.JPG', caption: 'Ruyi Peak' },
   { src: '/images/photos/IMG_3340.JPG', caption: 'Hike in Southern China' },
   { src: '/images/photos/IMG_3365.JPG', caption: 'Dong Village' },
-  { src: '/images/photos/IMG_3376.JPG', caption: 'Rice terraces' },
   { src: '/images/photos/IMG_3377.JPG', caption: 'Little village in the mountains' },
   { src: '/images/photos/IMG_3384.JPG', caption: 'Urbanism' },
   { src: '/images/photos/IMG_3405.JPG', caption: 'Nightlife in Guiyang' },
   { src: '/images/photos/IMG_3415.JPG', caption: 'Guiyang scenes' },
-  { src: '/images/photos/IMG_3437.JPG', caption: 'Miao village' },
   { src: '/images/photos/IMG_3440.JPG', caption: 'Dusk' }
 ];
 
