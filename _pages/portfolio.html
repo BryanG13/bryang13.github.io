@@ -1,14 +1,38 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Projects"
+permalink: /projects/
 author_profile: true
+redirect_from:
+  - /portfolio/
+  - /portfolio.html
 ---
 
 {% include base_path %}
 
+Most of my work sits at the boundary between optimization research and operational practice. The selection below ranges from doctoral research and industrial consulting to the course projects where the method was learned — the facility design and time studies are as much a part of how I think as the metaheuristics. Where a project led to a publication or a talk, it is linked from the entry.
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% assign industry = site.portfolio | where: "category", "industry" | sort: "date" | reverse %}
+{% assign research = site.portfolio | where: "category", "research" | sort: "date" | reverse %}
+{% assign phd = site.portfolio | where: "category", "phd" | sort: "date" | reverse %}
+{% assign coursework = site.portfolio | where: "category", "coursework" | sort: "date" | reverse %}
+
+<h2>Industry</h2>
+{% for post in industry %}
+  {% include archive-single-project.html %}
 {% endfor %}
 
+<h2>Research</h2>
+{% for post in research %}
+  {% include archive-single-project.html %}
+{% endfor %}
+
+<h2>Doctoral Research</h2>
+{% for post in phd %}
+  {% include archive-single-project.html %}
+{% endfor %}
+
+<h2>Course Projects</h2>
+{% for post in coursework %}
+  {% include archive-single-project.html %}
+{% endfor %}

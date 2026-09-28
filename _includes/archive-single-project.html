@@ -1,0 +1,27 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+    {% if post.period or post.institution or post.role %}
+      <p class="page__meta">
+        {% if post.period %}{{ post.period }}{% endif %}{% if post.period and post.institution %} &middot; {% endif %}
+        {% if post.institution %}{{ post.institution }}{% endif %}{% if post.role %} &middot; {{ post.role }}{% endif %}
+      </p>
+    {% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    {% if post.links %}
+      <p>
+        {% for link in post.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}
+      </p>
+    {% endif %}
+  </article>
+</div>
