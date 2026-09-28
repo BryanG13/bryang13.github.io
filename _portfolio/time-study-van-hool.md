@@ -21,5 +21,3 @@ The project had three parts:
 Two site visits did most of the work, one to learn the process and one for the tablet-based measurements, with presentations in between and a written report at the end.
 
 Two things stick with me about industrial engineering in a company like this. First, the observed method and the *intended* method are rarely the same thing, and the gap between them is where most of the available time is hiding. Second, a standard time you cannot defend is worse than no standard time at all: the whole point of doing the study properly (allowances, work sampling, accuracy discussion) is that the number survives being challenged by the person who has to meet it.
-
-*The written report for this project is not in my current archive, so this entry describes the assignment rather than reporting measured results.*

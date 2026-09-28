@@ -16,7 +16,9 @@ The work spans an exact mixed-integer programming approach with column generatio
 
 ---
 
-## MSc in Operations Research and Industrial Engineering
+## MSc in Engineering Sciences: Operations Research and Industrial Engineering
+
+(Burgerlijk Ingenieur)
 
 **Ghent University**, Faculty of Engineering and Architecture · **2018**
 
@@ -26,7 +28,9 @@ A two-year master's in the Department of Industrial Engineering Systems and Prod
 
 ---
 
-## Bachelor's degree in Engineering Sciences
+## BSc in Engineering Sciences: Chemical Engineering and Materials Science
+
+(Burgerlijk Ingenieur)
 
 **Ghent University**, Faculty of Engineering and Architecture · **2016**
 
@@ -48,4 +52,4 @@ Three years in the engineering sciences programme, specialising in **chemical te
 
 ## Technical toolkit
 
-Gurobi, CPLEX and Hexaly for exact optimization, C++ and Python (NumPy, pandas, SciPy, matplotlib) for models, heuristics and analysis, LaTeX for writing, and OpenStreetMap for road-network instances and travel times. Heuristics and metaheuristics developed and applied include large neighborhood search, simulated annealing, GRASP, column generation and tabu search.
+Gurobi, CPLEX and Hexaly for exact optimization, C++ and Python (NumPy, pandas, SciPy, matplotlib) for models, heuristics and analysis, LaTeX for writing, and OpenStreetMap for road-network instances and travel times. Docker for containarized systems. Git, GitHub and BitBucket for version control. MongoCxx for database management. Heuristics and metaheuristics developed and applied include large neighborhood search, simulated annealing, GRASP, column generation and tabu search.

@@ -18,6 +18,4 @@ Every year a school district has to do something that looks like a matching prob
 
 The first is a randomized constructive assignment. Each school holds a ticket list, and when a place opens the algorithm reaches into that list. Two adjustments decide who is at the front: students with relatives at that school are moved up, and when a school is working through its reserved capacity the priority students are moved up instead. The second is **serial dictatorship**, the mechanism design classic, where students are served in a random order and each simply takes the best school that still has room.
 
-**Isolating the rules.** The interesting part was not either mechanism on its own but what each rule is worth. The real instance was therefore run in four variants, crossing the priority rule on and off against the relatives rule on and off. That is what turns a policy argument into something you can put a number on, and it is the part I would want a district to look at before deciding which rule to keep.
-
-*The comparison was run and the results workbook exists, but it is not part of the current archive, so this entry describes the problem and the mechanisms rather than reporting the measured trade-offs. The data provider is not named here without permission.*
+I was responsible for the implementation of these algorithms. 
