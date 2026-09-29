@@ -3,7 +3,7 @@ title: "Parameter Space Search: a metaheuristic that searches the parameters of 
 collection: portfolio
 category: phd
 permalink: /project/2023-parameter-space-search
-excerpt: "A new type of metaheuristic framework, developed during my PhD, in which an outer simulated annealing searches the parameter space of an inner semi-random greedy constructive heuristic — instead of searching the solution space directly."
+excerpt: "A new type of metaheuristic framework, developed during my PhD, in which an outer simulated annealing searches the parameter space of an inner semi-random greedy constructive heuristic, instead of searching the solution space directly."
 date: 2023-09-01
 period: "2021 – 2023"
 institution: "University of Antwerp (PhD, joint with KU Leuven)"
@@ -15,7 +15,7 @@ links:
     url: "/talks/2022-claio"
 ---
 
-Most metaheuristics perturb or recombine *solutions*. Parameter Space Search (PSS) perturbs *parameters* instead. A semi-random greedy constructive heuristic is run repeatedly under randomized construction parameters — including a feasibility ratio and a pilot method — and an outer simulated annealing searches that parameter space.
+Most metaheuristics perturb or recombine *solutions*. Parameter Space Search (PSS) perturbs *parameters* instead. A semi-random greedy constructive heuristic is run repeatedly under randomized construction parameters, including a feasibility ratio and a pilot method, and an outer simulated annealing searches that parameter space.
 
 The motivation is diversity. Because consecutive runs behave quite differently, the framework explores far more of the feasible region than a single restarting heuristic, which is what makes it able to find feasible solutions on strictly constrained instances where other metaheuristics stall. It is also agnostic to the problem: the same outer search can be applied to a different inner constructive heuristic without redesigning the framework.
 

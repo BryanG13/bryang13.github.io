@@ -22,7 +22,7 @@ The setting is the **N177 between Boom and central Antwerp**, a suburban corrido
 The findings:
 
 - **Service quality** improved by 31.6% on the global objective, and average user ride time dropped by 22% compared with the existing transit options.
-- **Acceptance saturates at around 90%** once roughly 12 buses are available — beyond that, extra vehicles add little.
-- There is a genuine trade-off in how much freedom the optimizer is given: with only 3 buses a near-perfect solution is achievable for accepted requests, but the global objective suffers. The sweet spot in the *degree of optimization freedom* is intermediate, not extreme — the same Goldilocks logic that runs through the service design itself.
+- **Acceptance saturates at around 90%** once roughly 12 buses are available. Beyond that, extra vehicles add little.
+- There is a genuine trade-off in how much freedom the optimizer is given: with only 3 buses a near-perfect solution is achievable for accepted requests, but the global objective suffers. The sweet spot in the *degree of optimization freedom* is intermediate, not extreme. The same Goldilocks logic that runs through the service design itself.
 
 The instance generation for this study was done with a custom generator built on OpenStreetMap road networks, so the demand and travel times reflect the actual corridor rather than an abstract network.

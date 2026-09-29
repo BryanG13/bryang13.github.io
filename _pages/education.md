@@ -6,7 +6,7 @@ author_profile: true
 
 ## PhD in Operations Research
 
-**University of Antwerp**, Faculty of Business and Economics · **2023**
+**University of Antwerp**, Faculty of Business and Economics · **May 2023**
 
 Doctoral research on the design and optimization of semi-flexible demand-responsive bus services, conducted jointly with **KU Leuven** and funded by the **Research Foundation Flanders (FWO)**. Supervisors: Prof. Kenneth Sörensen and Prof. Pieter Vansteenwegen.
 
@@ -20,11 +20,11 @@ The work spans an exact mixed-integer programming approach with column generatio
 
 (Burgerlijk Ingenieur)
 
-**Ghent University**, Faculty of Engineering and Architecture · **2018**
+**Ghent University**, Faculty of Engineering and Architecture · **July 2018**
 
 A two-year master's in the Department of Industrial Engineering Systems and Product Design, with a strong methodological core: optimization models, heuristics, decomposition techniques, queueing theory, and manufacturing and service systems simulation.
 
-**Thesis: *Multi-modal Coordination Schemes for Intelligent Traffic Systems*.** Traffic signal control is classically optimized for cars alone. This thesis extends single-mode control to a genuinely multi-modal scheme: a network of three intersections and eleven signals modelled on Ghent's R20 ring road, where congestion is estimated with Monte Carlo estimators of expected queue sizes, and cars are weighted against public transport. Four models were compared (uni-modal, multi-modal with passenger car equivalents, bus-priority, and a bi-objective variant that weights public transport stops), each optimized with simulated annealing and multi-objective simulated annealing. Supervisors: Prof. E.-H. Aghezzaf and Prof. Sidharta Gautama.
+**Thesis: [*Multi-modal Coordination Schemes for Intelligent Traffic Systems*](https://eu-st01.ext.exlibrisgroup.com/32RUG_INST/storage/alma/38/8B/32/0E/DB/A1/A7/F4/6F/D9/19/7E/EB/16/02/18/RUG01-002494569_2018_0001_AC.pdf?AccessRightAllowDownload=true&Expires=1790722376&Signature=mXx8GNpvQpDYkrZxWk5nJt4P5WgUm7NEmpEeWgF4GrSCwtm3jjc60AX0s0tvbGsNNDj-Qlywr7jMPzXJNU5QfmmWbLexI0mJ~pIVerWjL319QUCs8LLpOxmKpWD6pEqt36NvOszfOhQtBTMpCm5lTY6-rOerrKXTgdWqtM2Gr4stZiEg7cAn14ooNRlrjCgLCOGcD6Jm6Xm7v2QbT~rzAOhXSOWak8isd8gswC8JkjyEys5ABYLNaz1dYnHCwvpW57T9W04keEcP3IxYIxnwNRHCAhpYttHOSdGduDDUb095hBPa7Z2vUMKdGiGPigR2NNRBf6geNcJ1n4TK1aDsUg__&Key-Pair-Id=APKAJ72OZCZ36VGVASIA).** Traffic signal control is classically optimized for cars alone. This thesis extends single-mode control to a genuinely multi-modal scheme: a network of three intersections and eleven signals modelled on Ghent's R20 ring road, where congestion is estimated with Monte Carlo estimators of expected queue sizes, and cars are weighted against public transport. Four models were compared (uni-modal, multi-modal with passenger car equivalents, bus-priority, and a bi-objective variant that weights public transport stops), each optimized with simulated annealing and multi-objective simulated annealing. Supervisors: Prof. E.-H. Aghezzaf and Prof. Sidharta Gautama.
 
 ---
 
@@ -32,14 +32,9 @@ A two-year master's in the Department of Industrial Engineering Systems and Prod
 
 (Burgerlijk Ingenieur)
 
-**Ghent University**, Faculty of Engineering and Architecture · **2016**
+**Ghent University**, Faculty of Engineering and Architecture · **September 2016**
 
-Three years in the engineering sciences programme, specialising in **chemical technology and materials engineering** (track CTMA). The first year was the common part shared across the faculty's engineering programmes. The specialisation that followed covered chemical process technology, materials science, transport phenomena and thermodynamics. The engineering projects along the way:
-
-- **Cooling a processor with ion wind** (2013): designing and building an ion wind generator to cool a CPU, as a first hands-on exercise in thermal engineering and measurement.
-- **The secrets of oil, gas and bio-oil** (2014): analysing bio-oil from genetically modified poplar (elemental analysis, GC×GC) and bio-ethylene production, a team project on renewable fuels and their chemical precursors.
-- **Microstructure of alloys: TRIP steel** (2015): a materials practicum using dilatometry, SEM, XRD and hardness testing to read how a transformation-induced plasticity steel's microstructure governs its mechanical behaviour.
-
+Three years in the engineering sciences programme. The first year was the common part shared across the faculty's engineering programmes. The specialisation that followed covered chemical process technology, materials science, transport phenomena and thermodynamics.
 ---
 
 ## Selected coursework

@@ -3,7 +3,7 @@ title: "AI-powered dispatching for non-emergency medical transport"
 collection: portfolio
 category: industry
 permalink: /project/2025-triptomatic-nemt-dispatching
-excerpt: "A VLAIO-funded development project delivering an automatic dispatching module for non-emergency medical transport, which builds and continuously re-optimises the daily trip schedule and crew assignments — with human dispatchers always in the loop."
+excerpt: "A VLAIO-funded development project delivering an automatic dispatching module for non-emergency medical transport, which builds and continuously re-optimises the daily trip schedule and crew assignments, with human dispatchers always in the loop."
 date: 2025-06-01
 period: "2022 – 2025"
 institution: "Triptomatic (VLAIO development project)"
