@@ -35,6 +35,7 @@ A two-year master's in the Department of Industrial Engineering Systems and Prod
 **Ghent University**, Faculty of Engineering and Architecture · **September 2016**
 
 Three years in the engineering sciences programme. The first year was the common part shared across the faculty's engineering programmes. The specialisation that followed covered chemical process technology, materials science, transport phenomena and thermodynamics.
+
 ---
 
 ## Selected coursework
