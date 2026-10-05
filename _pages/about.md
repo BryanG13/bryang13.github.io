@@ -25,9 +25,9 @@ My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical t
 
 <div style="text-align: center; margin: 30px 0;">
   <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
-    <button type="button" id="prevPhoto" onclick="stepPhoto(-1)" aria-label="Previous photo" style="cursor: pointer; background: none; border: 1px solid #ccc; border-radius: 20px; padding: 4px 14px; font-size: 0.9em;">&#8592; Previous</button>
+    <button type="button" id="prevPhoto" onclick="stepPhoto(-1)" aria-label="Previous photo" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="cursor: pointer; background: none; border: none; padding: 0; font-size: 0.9em; color: #666;">&#8592; Previous</button>
     <span id="photoCaption" style="font-size: 0.9em; color: #666;">Loading a photo...</span>
-    <button type="button" id="nextPhoto" onclick="stepPhoto(1)" aria-label="Next photo" style="cursor: pointer; background: none; border: 1px solid #ccc; border-radius: 20px; padding: 4px 14px; font-size: 0.9em;">Next &#8594;</button>
+    <button type="button" id="nextPhoto" onclick="stepPhoto(1)" aria-label="Next photo" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="cursor: pointer; background: none; border: none; padding: 0; font-size: 0.9em; color: #666;">Next &#8594;</button>
   </div>
   <img id="randomPhoto" src="{{ '/images/500x300.png' | relative_url }}" alt="Loading a random photograph..." style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="stepPhoto(1)">
 </div>
@@ -202,15 +202,21 @@ const fallbackPhoto = '{{ '/images/500x300.png' | relative_url }}';
 
 const thumbUrl = src => src.replace('/images/photos/', '/images/photos/thumbs/').replace(/\.[^./]+$/, '.jpg');
 
-const orderedPhotos = [...photos].sort((a, b) => a.src.localeCompare(b.src));
-const daySeed = Math.floor(Date.now() / 86400000);
-const startIndex = orderedPhotos.length ? (daySeed * 7919) % orderedPhotos.length : 0;
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
 
-let currentPhotoIndex = startIndex;
+const shuffledPhotos = shuffleArray(photos);
+let currentPhotoIndex = shuffledPhotos.length ? Math.floor(Math.random() * shuffledPhotos.length) : 0;
 let currentSrc = '';
 
 function showPhoto() {
-  const photo = orderedPhotos[currentPhotoIndex];
+  const photo = shuffledPhotos[currentPhotoIndex];
   const src = thumbUrl(photo.src);
 
   if (src === currentSrc) return;
@@ -226,13 +232,13 @@ function showPhoto() {
   randomPhoto.src = src;
   photoCaption.textContent = photo.caption || '';
 
-  const next = orderedPhotos[(currentPhotoIndex + 1) % orderedPhotos.length];
+  const next = shuffledPhotos[(currentPhotoIndex + 1) % shuffledPhotos.length];
   if (next) new Image().src = thumbUrl(next.src);
 }
 
 function stepPhoto(direction) {
-  if (!orderedPhotos.length) return;
-  currentPhotoIndex = (currentPhotoIndex + direction + orderedPhotos.length) % orderedPhotos.length;
+  if (!shuffledPhotos.length) return;
+  currentPhotoIndex = (currentPhotoIndex + direction + shuffledPhotos.length) % shuffledPhotos.length;
   showPhoto();
 }
 
