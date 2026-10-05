@@ -21,12 +21,15 @@ My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical t
 
 ---
 
-🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Here below, you can click to view a random photo I have taken! 
+🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Browse through some photos I have taken:
 
-Keep clicking on a picture to view more:
 <div style="text-align: center; margin: 30px 0;">
-  <img id="randomPhoto" src="{{ '/images/500x300.png' | relative_url }}" alt="Loading a random photograph..." style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="changePhoto()">
-  <p id="photoCaption" style="font-size: 0.9em; color: #666; margin-top: 10px;">Click the photo to see another one!</p>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+    <button type="button" id="prevPhoto" onclick="stepPhoto(-1)" aria-label="Previous photo" style="cursor: pointer; background: none; border: 1px solid #ccc; border-radius: 20px; padding: 4px 14px; font-size: 0.9em;">&#8592; Previous</button>
+    <span id="photoCaption" style="font-size: 0.9em; color: #666;">Loading a photo...</span>
+    <button type="button" id="nextPhoto" onclick="stepPhoto(1)" aria-label="Next photo" style="cursor: pointer; background: none; border: 1px solid #ccc; border-radius: 20px; padding: 4px 14px; font-size: 0.9em;">Next &#8594;</button>
+  </div>
+  <img id="randomPhoto" src="{{ '/images/500x300.png' | relative_url }}" alt="Loading a random photograph..." style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="stepPhoto(1)">
 </div>
 
 <script>
@@ -197,42 +200,50 @@ const randomPhoto = document.getElementById('randomPhoto');
 const photoCaption = document.getElementById('photoCaption');
 const fallbackPhoto = '{{ '/images/500x300.png' | relative_url }}';
 
-let shuffledPhotos = [];
-let currentPhotoIndex = 0;
-let isShuffled = false;
+const thumbUrl = src => src.replace('/images/photos/', '/images/photos/thumbs/').replace(/\.[^./]+$/, '.jpg');
 
-function shuffleArray(array) {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-}
+const orderedPhotos = [...photos].sort((a, b) => a.src.localeCompare(b.src));
+const daySeed = Math.floor(Date.now() / 86400000);
+const startIndex = orderedPhotos.length ? (daySeed * 7919) % orderedPhotos.length : 0;
 
-function changePhoto() {
-  if (!isShuffled) {
-    shuffledPhotos = shuffleArray(photos);
-    isShuffled = true;
-  }
+let currentPhotoIndex = startIndex;
+let currentSrc = '';
 
-  const currentPhoto = shuffledPhotos[currentPhotoIndex];
+function showPhoto() {
+  const photo = orderedPhotos[currentPhotoIndex];
+  const src = thumbUrl(photo.src);
+
+  if (src === currentSrc) return;
+  currentSrc = src;
+
   randomPhoto.onerror = () => {
     randomPhoto.onerror = null;
     randomPhoto.alt = 'Photo unavailable';
     randomPhoto.src = fallbackPhoto;
     photoCaption.textContent = 'Photo unavailable';
   };
-  randomPhoto.alt = currentPhoto.caption || 'Random photograph';
-  randomPhoto.src = currentPhoto.src;
-  photoCaption.textContent = currentPhoto.caption || 'Click the photo to see another one!';
+  randomPhoto.alt = photo.caption || 'Photograph';
+  randomPhoto.src = src;
+  photoCaption.textContent = photo.caption || '';
 
-  currentPhotoIndex = (currentPhotoIndex + 1) % shuffledPhotos.length;
+  const next = orderedPhotos[(currentPhotoIndex + 1) % orderedPhotos.length];
+  if (next) new Image().src = thumbUrl(next.src);
 }
 
-if (randomPhoto && photoCaption) {
-  changePhoto();
+function stepPhoto(direction) {
+  if (!orderedPhotos.length) return;
+  currentPhotoIndex = (currentPhotoIndex + direction + orderedPhotos.length) % orderedPhotos.length;
+  showPhoto();
+}
+
+function initPhotoGallery() {
+  if (!randomPhoto || !photoCaption) return;
+  showPhoto();
+}
+
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', initPhotoGallery, { once: true });
 } else {
-  window.addEventListener('DOMContentLoaded', changePhoto, { once: true });
+  initPhotoGallery();
 }
 </script>  
