@@ -24,12 +24,14 @@ My research interests lie in: 🚌 urban logistics, 🚑 non-emergency medical t
 🌍 Outside of work, I enjoy photography, traveling, and discovering hidden places. Exploring nature and small towns helps me recharge and often gives me new perspectives on the problems I tackle in my professional life. Browse through some photos I have taken:
 
 <div style="text-align: center; margin: 30px 0;">
-  <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
-    <button type="button" id="prevPhoto" onclick="stepPhoto(-1)" aria-label="Previous photo" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="cursor: pointer; background: none; border: none; padding: 0; font-size: 0.9em; color: #666;">&#8592; Previous</button>
-    <span id="photoCaption" style="font-size: 0.9em; color: #666;">Loading a photo...</span>
-    <button type="button" id="nextPhoto" onclick="stepPhoto(1)" aria-label="Next photo" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="cursor: pointer; background: none; border: none; padding: 0; font-size: 0.9em; color: #666;">Next &#8594;</button>
+  <div style="display: inline-block; max-width: 100%;">
+    <div style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 8px; margin-bottom: 12px;">
+      <button type="button" id="prevPhoto" onclick="stepPhoto(-1)" aria-label="Previous photo" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="justify-self: start; cursor: pointer; background: none; border: none; padding: 0; font-size: 0.9em; color: #666;">&#8592; Previous</button>
+      <span id="photoCaption" style="font-size: 0.9em; color: #666;">Loading a photo...</span>
+      <button type="button" id="nextPhoto" onclick="stepPhoto(1)" aria-label="Next photo" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="justify-self: end; cursor: pointer; background: none; border: none; padding: 0; font-size: 0.9em; color: #666;">Next &#8594;</button>
+    </div>
+    <img id="randomPhoto" src="{{ '/images/500x300.png' | relative_url }}" alt="Loading a random photograph..." style="display: block; max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="stepPhoto(1)">
   </div>
-  <img id="randomPhoto" src="{{ '/images/500x300.png' | relative_url }}" alt="Loading a random photograph..." style="max-width: 100%; height: auto; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" onclick="stepPhoto(1)">
 </div>
 
 <script>
