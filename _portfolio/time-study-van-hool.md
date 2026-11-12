@@ -3,7 +3,7 @@ title: "Method and time study at Van Hool"
 collection: portfolio
 category: coursework
 permalink: /project/2016-van-hool-time-study
-excerpt: "A complete method and time study of a workstation at Van Hool: critically studying how the work is actually done, measuring it by direct time study and work sampling, and designing an optimized standard work method with a defensible standard time."
+excerpt: "A complete method and time study of a workstation at Van Hool: critically studying how the work is actually done, measuring it by direct time study and work sampling, and designing an optimised standard work method with a defensible standard time."
 date: 2016-12-01
 period: "2016"
 institution: "Ghent University (Methods Engineering and Work Measurement)"
@@ -16,7 +16,7 @@ The project had three parts:
 
 1. **Methods study.** A critical look at the existing workplace, and a reasoned argument for which technique the work should use.
 2. **Time study.** A **direct time study** to establish a standard time, plus a **work sampling** study as a cross-check, with a discussion of the accuracy each method can support.
-3. **The future state.** Proposed and quantified improvements, delivered as a proper **optimized standard work method**: an operative instruction sheet with a well-grounded standard time, not a set of suggestions.
+3. **The future state.** Proposed and quantified improvements, delivered as a proper **optimised standard work method**: an operative instruction sheet with a well-grounded standard time, not a set of suggestions.
 
 Two site visits did most of the work, one to learn the process and one for the tablet-based measurements, with presentations in between and a written report at the end.
 

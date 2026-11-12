@@ -19,6 +19,6 @@ This project, delivered for the Belgian software platform **Triptomatic** and co
 
 On the operations research side the problem is a large-scale, dynamic combinatorial scheduling problem: the schedule has to be re-planned many times per day as requests, cancellations and delays come in, while respecting the medical, legal, contractual and cost priorities that each provider configures for itself.
 
-I led the research, development and implementation of the combinatorial optimization methods behind the module. The approach was validated in side-by-side pilot runs with provider dispatchers, targeting large reductions in dispatcher planning time, fewer kilometres and overtime hours, better punctuality, and more consistent, less bias-prone schedules.
+I led the research, development and implementation of the combinatorial optimisation methods behind the module. The approach was validated in side-by-side pilot runs with provider dispatchers, targeting large reductions in dispatcher planning time, fewer kilometres and overtime hours, better punctuality, and more consistent, less bias-prone schedules.
 
 *The dispatching technology and its underlying algorithms are owned by Triptomatic.*

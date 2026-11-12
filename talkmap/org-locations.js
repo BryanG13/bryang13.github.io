@@ -1,6 +1,6 @@
 var addressPoints = [
   [
-    "14th Metaheuristics International Conference (MIC 2022)<br />Department of Architecture, Universita' degli studi di Catania; Syracuse, Italy",
+    "14th Metaheuristics International Conference (MIC 2022)<br />Department of Architecture, Universit\u00e0 degli Studi di Catania; Syracuse, Italy",
     37.0315752,
     15.2124277
   ],
@@ -10,12 +10,12 @@ var addressPoints = [
     103.8194992
   ],
   [
-    "31st European Conference on Operations Research (EURO 2021)<br />University Of West Attica; Athens, Greece",
+    "31st European Conference on Operations Research (EURO 2021)<br />University of West Attica; Athens, Greece",
     37.9755648,
     23.7348324
   ],
   [
-    "Latin Ibero-American Summer School On Operations Research (ELAVIO 2022)<br />Tecnol\u00f3gico de Monterrey; Monterrey, Mexico",
+    "Latin Ibero-American Summer School on Operations Research (ELAVIO 2022)<br />Tecnol\u00f3gico de Monterrey; Monterrey, Mexico",
     25.6802019,
     -100.315258
   ],
@@ -25,7 +25,7 @@ var addressPoints = [
     3.0635282
   ],
   [
-    "XXI Latin Ibero-American Conference On Operations Research (CLAIO 2022)<br />'Cero + Infinito' Building - Ciudad Universitaria; Buenos Aires, Argentina",
+    "XXI Latin Ibero-American Conference on Operations Research (CLAIO 2022)<br />'Cero + Infinito' Building - Ciudad Universitaria; Buenos Aires, Argentina",
     -34.6095579,
     -58.3887904
   ],

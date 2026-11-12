@@ -3,14 +3,14 @@ title: "Designing a system for parts picking and line supply"
 collection: portfolio
 category: coursework
 permalink: /project/2018-production-facility-design
-excerpt: "Designing a greenfield plant for a manufacturer of 21,000 electric golf carts a year: takt time and line balancing for a high-customization line, a kitting supermarket for parts supply, the facility layout, and a discrete-event simulation to check the whole thing holds together."
+excerpt: "Designing a greenfield plant for a manufacturer of 21,000 electric golf carts a year: takt time and line balancing for a high-customisation line, a kitting supermarket for parts supply, the facility layout, and a discrete-event simulation to check the whole thing holds together."
 date: 2018-06-01
 period: "2018"
 institution: "Ghent University (Design of Manufacturing and Service Operations)"
 role: "Team project, supervised by Prof. Birger Raa and Prof. Dieter Claeys"
 ---
 
-A new entrant in the electric golf cart market asked us to design its production facility from scratch. The reports deliberately keep the company anonymous, so I will keep it that way, but everything else is real: **15,000 long and 6,000 short carts a year**, 21,000 in total, on two 8-hour shifts over 200 working days, with a *single* assembly line expected to absorb heavy customization.
+A new entrant in the electric golf cart market asked us to design its production facility from scratch. The reports deliberately keep the company anonymous, so I will keep it that way, but everything else is real: **15,000 long and 6,000 short carts a year**, 21,000 in total, on two 8-hour shifts over 200 working days, with a *single* assembly line expected to absorb heavy customisation.
 
 That last point is what makes it hard. Variety on one line means takt time has to be set by the worst-case variant, or everything else on the line ends up waiting.
 

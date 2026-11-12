@@ -16,6 +16,6 @@ Every year a school district has to do something that looks like a matching prob
 
 **Two mechanisms, side by side.** The point of the project was to compare mechanisms rather than to build one clever algorithm, so I implemented two in C++.
 
-The first is a randomized constructive assignment. Each school holds a ticket list, and when a place opens the algorithm reaches into that list. Two adjustments decide who is at the front: students with relatives at that school are moved up, and when a school is working through its reserved capacity the priority students are moved up instead. The second is **serial dictatorship**, the mechanism design classic, where students are served in a random order and each simply takes the best school that still has room.
+The first is a randomised constructive assignment. Each school holds a ticket list, and when a place opens the algorithm reaches into that list. Two adjustments decide who is at the front: students with relatives at that school are moved up, and when a school is working through its reserved capacity the priority students are moved up instead. The second is **serial dictatorship**, the mechanism design classic, where students are served in a random order and each simply takes the best school that still has room.
 
-I was responsible for the implementation of these algorithms. 
+I was responsible for the implementation of these algorithms.

@@ -15,10 +15,10 @@ links:
     url: "/talks/2022-claio"
 ---
 
-Most metaheuristics perturb or recombine *solutions*. Parameter Space Search (PSS) perturbs *parameters* instead. A semi-random greedy constructive heuristic is run repeatedly under randomized construction parameters, including a feasibility ratio and a pilot method, and an outer simulated annealing searches that parameter space.
+Most metaheuristics perturb or recombine *solutions*. Parameter Space Search (PSS) perturbs *parameters* instead. A semi-random greedy constructive heuristic is run repeatedly under randomised construction parameters, including a feasibility ratio and a pilot method, and an outer simulated annealing searches that parameter space.
 
 The motivation is diversity. Because consecutive runs behave quite differently, the framework explores far more of the feasible region than a single restarting heuristic, which is what makes it able to find feasible solutions on strictly constrained instances where other metaheuristics stall. It is also agnostic to the problem: the same outer search can be applied to a different inner constructive heuristic without redesigning the framework.
 
-On 42 benchmark instances the framework performed on average **12.42% better than Hexaly**, a commercial optimization solver given a full one-hour budget on 12 threads, with an average runtime of 2.1 seconds and up to 21% better on individual instances. Larger instances were solved typically within 2 minutes. Parallelising the repeated inner runs gave a speedup of 2.6× on average and 5.11× at best.
+On 42 benchmark instances the framework performed on average **12.42% better than Hexaly**, a commercial optimisation solver given a full one-hour budget on 12 threads, with an average runtime of 2.1 seconds and up to 21% better on individual instances. Larger instances were solved typically within 2 minutes. Parallelising the repeated inner runs gave a speedup of 2.6× on average and 5.11× at best.
 
 The framework is described in my paper *A demand-responsive feeder service with a maximum headway at mandatory stops* (Networks, 2023).

@@ -1,5 +1,5 @@
 ---
-title: "XXI Latin Ibero-American Conference On Operations Research (CLAIO 2022)"
+title: "XXI Latin Ibero-American Conference on Operations Research (CLAIO 2022)"
 collection: talks
 type: "Conference Presentation"
 category: "conference"
@@ -9,4 +9,4 @@ date: 2022-12-12
 location: "Buenos Aires, Argentina"
 ---
 
-Presentation of working paper about enhancing demand-responsive feeder services through maximum headway constraints at mandatory stops, at [CLAIO 2022](https://claio2022.dc.uba.ar/).
+Presentation of a working paper on enhancing demand-responsive feeder services through maximum headway constraints at mandatory stops, at [CLAIO 2022](https://claio2022.dc.uba.ar/).
