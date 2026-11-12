@@ -220,8 +220,8 @@ function shuffleArray(array) {
   return shuffled;
 }
 
-// Random order, but photos from the same trip are spread evenly through the
-// sequence so similar scenery rarely appears back to back.
+/* Random order, but photos from the same trip are spread evenly through the
+   sequence so similar scenery rarely appears back to back. */
 function spreadShuffle(items) {
   const groups = {};
   items.forEach(item => (groups[item.trip || 'misc'] ||= []).push(item));
@@ -238,8 +238,8 @@ function spreadShuffle(items) {
   placed.sort((a, b) => a.pos - b.pos);
   const result = placed.map(p => p.item);
 
-  // Fix any remaining back-to-back repeats (including the wrap-around) by
-  // swapping in a photo whose new neighbours are all from other trips.
+  /* Fix any remaining back-to-back repeats (including the wrap-around) by
+     swapping in a photo whose new neighbours are all from other trips. */
   const n = result.length;
   const trip = k => result[(k + n) % n].trip;
   const fitsAt = (k, t, skip) => [k - 1, k + 1].every(m => (m + n) % n === skip || trip(m) !== t);
