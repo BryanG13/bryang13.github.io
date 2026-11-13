@@ -1,0 +1,187 @@
+%% Balanced CV (academia + industry). Merged from the Academic and Industry
+%% branches of the CV_versions repository. Compile with: latexmk -pdf CV_BryanGalarza.tex
+%% The compiled PDF (CV_BryanGalarza.pdf) is served by the website at /cv/CV_BryanGalarza.pdf.
+\documentclass[10pt,a4paper,sans]{moderncv}
+\usepackage{lmodern}
+\hbadness=10000
+\hfuzz=10pt
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\usepackage[scale=0.80, total={6.5in, 9.5in}]{geometry}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{academicons}
+
+\providecommand*{\httpslink}[2][]{%
+  \ifthenelse{\equal{#1}{}}%
+    {\href{https://#2}{#2}}%
+    {\href{https://#2}{#1}}}
+\providecommand*\orcidsocialsymbol{{\aiOrcid}~}
+\providecommand*\googlescholarsocialsymbol{{\aiGoogleScholar}~}
+\providecommand*\researchgatesocialsymbol{{\aiResearchGate}~}
+
+\RenewDocumentCommand{\social}{O{}O{}m}{%
+  \ifthenelse{\equal{#2}{}}%
+    {
+      \ifthenelse{\equal{#1}{linkedin}}{\collectionadd[linkedin]{socials}{\protect\httpslink[#3]{www.linkedin.com/in/bryan-galarza-montenegro}}}{}%
+      \ifthenelse{\equal{#1}{github}}{\collectionadd[github]{socials}{\protect\httpslink[#3]{github.com/BryanG13}}}{}%
+      \ifthenelse{\equal{#1}{orcid}}{\collectionadd[orcid]{socials}{\protect\httpslink[#3]{orcid.org/#3}}}{}%
+      \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[#3]{scholar.google.com/citations?user=ObTkd7gAAAAJ}}}{}%
+      \ifthenelse{\equal{#1}{researchgate}}{\collectionadd[researchgate]{socials}{\protect\httpslink[#3]{www.researchgate.net/profile/Bryan-David-Galarza-Montenegro}}}{}%
+    }
+    {\collectionadd[#1]{socials}{\protect\httpslink[#3]{#2}}}}
+
+% personal data
+\name{Bryan}{GALARZA}
+\address{Antwerp}{Belgium}
+\email{bryangalarza1303@gmail.com}
+\social[linkedin]{LinkedIn}
+\social[orcid]{0000-0002-1827-5331}
+\social[googlescholar]{Google Scholar}
+\social[researchgate]{ResearchGate}
+\social[github]{GitHub}
+\extrainfo{\faGlobe~\href{https://bryang13.github.io/}{Personal page}}
+
+% compact bullet lists inside entries
+\newenvironment{cvbullets}{\begin{itemize}[leftmargin=0.6cm, noitemsep, topsep=0pt]}{\end{itemize}}
+
+\nopagenumbers
+\renewcommand*{\namefont}{\fontsize{20}{20}\mdseries\upshape}
+\begin{document}
+\makecvtitle
+\vspace{-30pt}
+
+%----------------------------------------------------------------------------------
+\section{Profile}
+Operations Research specialist with more than seven years of experience across academia and industry, designing optimisation models and algorithms for transportation, logistics and healthcare, and turning them into software that is used in practice. Postdoctoral researcher at the University of Antwerp (ANT/OR) and former Lead Operations Research Expert at Triptomatic, where I owned the optimisation workstream of a production dispatching system from research to deployment. My work combines exact methods, column generation, metaheuristics and real-time optimisation, with five peer-reviewed journal papers, a new metaheuristic framework (Parameter Space Search), and consulting projects for Atlas Copco, De Lijn and the Belgian police.\\
+
+\cvitem{Core strengths}{Combinatorial optimisation $\cdot$ vehicle routing and dispatching $\cdot$ mathematical programming $\cdot$ metaheuristics $\cdot$ real-time optimisation $\cdot$ algorithm design and implementation $\cdot$ production API design $\cdot$ data-driven performance analysis $\cdot$ technical leadership}
+\cvitem{Nationality}{Belgian citizen (EU)}
+
+%----------------------------------------------------------------------------------
+\section{Experience}
+\cventry{Oct 2025 -- Present}{Postdoctoral Researcher}{University of Antwerp, Department of Engineering Management (ANT/OR)}{Antwerp, Belgium}{}{Independent and collaborative research on healthcare transportation (non-emergency medical transport) and urban logistics (STRAUSS project).
+  \begin{cvbullets}
+    \item Developing mathematical models and optimisation algorithms for urban logistics and healthcare transportation.
+    \item Building LLM-assisted pipelines for structured, reproducible literature analysis (three-model extraction with human adjudication).
+    \item Mentoring PhD researchers.
+    \item Preparing research proposals with academic and industry partners.
+    \item Publishing in peer-reviewed journals and presenting at international conferences.
+  \end{cvbullets}}
+
+\cventry{Oct 2023 -- Oct 2025}{Lead Operations Research Expert}{Triptomatic (VLAIO-funded development project)}{Duffel, Belgium (remote)}{}{Triptomatic is a software company offering digital solutions for healthcare transport. I was fully responsible for the Operations Research part of a VLAIO-funded project to automate vehicle dispatching for non-emergency medical transport.
+  \begin{cvbullets}
+    \item Owned the full lifecycle of the optimisation service: requirements analysis, solution methodology, design, implementation, testing and production deployment.
+    \item Translated on-demand healthcare transport problems into OR models, and designed static and real-time dispatching and routing algorithms.
+    \item Built a production optimisation API (data extraction, transformation, optimisation run and result write-back) integrated into the company's web platform.
+    \item Deployed and integrated GIS routing components, including a local OSRM engine.
+    \item Ran scenario-based benchmarking and KPI evaluation; validated the approach in side-by-side pilot runs with provider dispatchers, targeting less planning time, fewer kilometres and overtime hours, and better punctuality.
+    \item Bridged academic research and industrial practice, working with developers and with technical and non-technical stakeholders.
+  \end{cvbullets}}
+
+\cventry{Jun 2019 -- Oct 2023}{Doctoral Researcher}{University of Antwerp (ANT/OR), jointly with KU Leuven}{Antwerp, Belgium}{}{PhD research on the modelling and optimisation of demand-responsive transportation systems.
+  \begin{cvbullets}
+    \item Conducted independent research on novel semi-flexible public transport services.
+    \item Designed, implemented and tested exact methods (MIP, column generation), metaheuristics and real-time algorithms for static and dynamic optimisation.
+    \item Developed Parameter Space Search, a new metaheuristic framework.
+    \item Published five papers in international journals .
+    \item Presented at nine international conferences, plus invited seminars.
+    \item Supervised Master's students in practical projects and thesis work.
+    \item Worked on and consulted for collaborative projects with industry partners (De Lijn, Belgian police).
+    \item Graduated on 15 May 2023 with a PhD in Operations Research, funded by the Research Foundation Flanders (FWO).
+  \end{cvbullets}}
+
+\cventry{Sep 2018 -- Apr 2019}{Improvement Consultant}{Atlas Copco}{Wilrijk, Belgium}{}{Joined through the young talent programme, then continued as a consultant on packaging policy for AIRnet and piping components.
+  \begin{cvbullets}
+    \item Documented the existing packaging policy, gathering constraints in weekly meetings with several departments.
+    \item Optimised it with a mixed-integer model and metaheuristics (simulated annealing), targeting a roughly 50\% reduction in annual distribution and storage costs, and delivered an implementation plan.
+  \end{cvbullets}}
+
+%----------------------------------------------------------------------------------
+\section{Education}
+\cventry{Jun 2019 -- May 2023}{Doctor of Philosophy (Ph.D.) in Operations Research}{University of Antwerp, ANT/OR}{Antwerp, Belgium}{}{Joint research with KU Leuven, funded by the Research Foundation Flanders (FWO)\\
+  \textit{Supervisors:} Kenneth Sörensen and Pieter Vansteenwegen\\
+  \textit{Thesis:} Towards the Goldilocks Zone of demand-responsive transportation services \href{https://repository.uantwerpen.be/docstore/d:irua:17462}{\faExternalLink*}}
+\cventry{Sep 2016 -- Jul 2018}{Master of Science in Engineering Sciences}{Ghent University, Industrial Systems Engineering}{Ghent, Belgium}{\textit{Cum Laude}}{Industrial Engineering and Operations Research (burgerlijk ingenieur)\\
+  \textit{Thesis:} Multimodal coordination schemes for Intelligent Traffic Systems \href{https://libstore.ugent.be/fulltxt/RUG01/002/494/569/RUG01-002494569_2018_0001_AC.pdf}{\faExternalLink*}}
+\cventry{Sep 2012 -- Jul 2016}{Bachelor of Science in Engineering Sciences}{Ghent University, Engineering and Architecture}{Ghent, Belgium}{}{Chemical Engineering and Materials Science (burgerlijk ingenieur)}
+\cventry{Sep 2005 -- Jul 2011}{Secondary education (ASO)}{Sint-Lievenscollege}{Antwerp, Belgium}{}{Science and Mathematics}
+
+%----------------------------------------------------------------------------------
+\section{Research Projects}
+\cventry{2025 -- Present}{Fundamental research in Non-Emergency Medical Transportation (NEMT)}{University of Antwerp (ANT/OR)}{Antwerp, Belgium}{}{Generic optimisation models and real-time solution approaches for NEMT systems, including a PRISMA-based scoping review of 81 studies extracted with a reproducible three-LLM pipeline.}
+\cventry{2023 -- 2025}{AI-powered dispatching for non-emergency medical transport}{Triptomatic (VLAIO)}{Duffel, Belgium (remote)}{}{Automatic dispatching module that drafts and continuously re-optimises the daily trip schedule and crew assignments, with dispatchers kept in the loop.}
+\cventry{2019 -- 2023}{Semi-flexible public transport optimisation}{University of Antwerp (PhD project)}{Antwerp, Belgium}{}{Demand-responsive feeder services combining assignment, routing and timetabling decisions; includes a case study on the N177 corridor (Boom--Antwerp) against existing De Lijn lines.}
+
+%----------------------------------------------------------------------------------
+\section{Industry and Consulting Projects}
+\cventry{2023 -- 2025}{Production optimisation API for healthcare dispatching}{Triptomatic (VLAIO development project)}{Belgium}{}{End-to-end optimisation service covering data extraction, transformation, optimisation and result write-back, integrated into a commercial web platform with a local OSRM/GIS routing engine.}
+\cventry{2022}{School bus routing for students with special needs}{De Lijn}{Flanders, Belgium}{}{Capacitated routing with wheelchair and accessibility constraints on real data for Diest (18 vehicles) and Gavere (9 vehicles), solved with a C++ large neighbourhood search and a Python layer for instance handling and visualisation.}
+\cventry{2022}{School choice assignment}{University of Antwerp (side project)}{Belgium}{}{Implemented in C++ and compared two assignment mechanisms (randomised constructive assignment and serial dictatorship) for 8,500 students across 86 schools, with capacity, priority and sibling rules.}
+\cventry{2020}{Patrol route optimisation}{Belgian police (mobile unit)}{Belgium}{}{Modelled time-dependent patrol routing with priority levels, visit durations, time windows and minimum/maximum revisit intervals, keeping routes effective but unpredictable.}
+\cventry{2018 -- 2019}{Packaging policy optimisation}{Atlas Copco}{Wilrijk, Belgium}{}{Mixed-integer model and simulated annealing for AIRnet and piping components, targeting a roughly 50\% reduction in annual distribution and storage costs.}
+
+%----------------------------------------------------------------------------------
+\section{Publications}
+\subsection{Journal articles}
+\cventry{2023}{The real-time dynamic online feeder service with a maximum headway at mandatory stops}{Transportmetrica A: Transport Science}{}{}{B.D. Galarza Montenegro, K. Sörensen, P. Vansteenwegen\\DOI: \url{https://doi.org/10.1080/23249935.2023.2227738}}
+\cventry{2023}{A demand-responsive feeder service with a maximum headway at mandatory stops}{Networks}{83(1)}{}{B.D. Galarza Montenegro, K. Sörensen, P. Vansteenwegen\\DOI: \url{https://doi.org/10.1002/net.22185}}
+\cventry{2022}{A survey on demand-responsive public bus systems}{Transportation Research Part C: Emerging Technologies}{137, 103573}{}{P. Vansteenwegen, L. Melis, D. Aktaş, B.D. Galarza Montenegro, P. Vieira, K. Sörensen\\DOI: \url{https://doi.org/10.1016/j.trc.2022.103573}}
+\cventry{2022}{\parbox[t]{0.82\linewidth}{A column generation algorithm for the demand-responsive feeder service with mandatory and optional, clustered bus-stops}}{Networks}{80(3)}{}{B.D. Galarza Montenegro, K. Sörensen, P. Vansteenwegen\\DOI: \url{https://doi.org/10.1002/net.22095}}
+\cventry{2021}{A large neighborhood search algorithm to optimize a demand-responsive feeder service}{Transportation Research Part C: Emerging Technologies}{127, 103102}{}{B.D. Galarza Montenegro, K. Sörensen, P. Vansteenwegen\\DOI: \url{https://doi.org/10.1016/j.trc.2021.103102}}
+\subsection{Thesis abstract}
+\cventry{2024}{Towards the Goldilocks Zone of demand-responsive bus services}{4OR}{22}{}{B.D. Galarza Montenegro (PhD thesis abstract)\\DOI: \url{https://doi.org/10.1007/s10288-023-00546-4}}
+\subsection{Under review}
+\cventry{2026}{Non-emergency medical transportation planning: A systematic scoping literature review}{International Transactions in Operational Research}{submitted}{}{B.D. Galarza Montenegro, K. Sörensen, R.A. Melo}
+
+%----------------------------------------------------------------------------------
+\section{Talks}
+\subsection{Invited seminars}
+\cventry{2026}{CORE OR Seminar}{CORE, UCLouvain}{Louvain-la-Neuve, Belgium}{}{Applied Operations Research solutions from an industrial research project}
+\cventry{2019, 2021, 2022}{CIB internal research seminar}{KU Leuven}{Leuven, Belgium}{}{Semi-flexible bus services: models and optimisation approaches}
+\subsection{Conference presentations}
+\cventry{2026}{40\textsuperscript{th} Annual Conference of the Belgian Operations Research Society}{ORBEL 40}{Leuven, Belgium}{}{An application of advanced optimization methods in Non-Emergency Medical Transportation\\
+  \textit{Co-author:} Adaptive Hybrid VNS-LNS for Time-Dependent Grocery Delivery Vehicle Routing (presented by O. Elsherif)}
+\cventry{2025}{Beta Symposium 2025}{Beta}{Soesterberg, The Netherlands}{}{SMART-NEMT: Structured Models and Algorithms for Real-Time Non-Emergency Medical Transport}
+\cventry{2023}{23\textsuperscript{rd} Conference of the International Federation of Operational Research Societies}{IFORS 2023}{Santiago, Chile}{}{The real-time dynamic online feeder service with a maximum headway at mandatory stops}
+\cventry{2022}{XXI Latin Ibero-American Conference on Operations Research}{CLAIO 2022}{Buenos Aires, Argentina}{}{Towards better service quality with the dynamic feeder service with a maximum headway at mandatory stops}
+\cventry{2022}{36\textsuperscript{th} Annual Conference of the Belgian Operations Research Society}{ORBEL 36}{Ghent, Belgium}{}{Towards better service quality with the dynamic feeder service with a maximum headway at mandatory stops}
+\cventry{2022}{14\textsuperscript{th} Metaheuristics International Conference}{MIC 2022}{Ortigia-Syracuse, Italy}{}{A demand-responsive feeder service with a maximum headway at mandatory stops}
+\cventry{2022}{Latin Ibero-American Summer School on Operations Research}{ELAVIO 2022}{Monterrey, Mexico}{}{A demand-responsive feeder service with a maximum headway at mandatory stops}
+\cventry{2021}{The Norwegian Operations Research Society}{NORS 2021}{Bergen, Norway}{}{A demand-responsive feeder service with mandatory stops and frequency constraints}
+\cventry{2021}{31\textsuperscript{st} European Conference on Operational Research}{EURO 2021}{Athens, Greece}{}{A large neighbourhood search algorithm to optimise a demand-responsive feeder service}
+\cventry{2021}{Corona Sessions: Public Transportation}{ORBEL 35}{Virtual}{}{A demand-responsive feeder service with mandatory and optional bus stops}
+\cventry{2020}{34\textsuperscript{th} Annual Conference of the Belgian Operations Research Society}{ORBEL 34}{Lille, France}{}{A demand-responsive feeder service with mandatory and clustered, optional bus stops}
+
+%----------------------------------------------------------------------------------
+\section{Supervision and Mentoring}
+\cventry{2025 -- Present}{PhD mentoring}{University of Antwerp}{Antwerp, Belgium}{}{Research mentoring of PhD researchers on modelling, algorithms and research execution.}
+\cventry{2019 -- Present}{Master's and Bachelor's supervision}{University of Antwerp}{Antwerp, Belgium}{}{Supervision and day-to-day guidance of students in optimisation-related projects and theses.}
+
+\section{Grants and Funded Projects}
+\cventry{2025 -- 2026}{SMART-NEMT BOF project}{University of Antwerp}{Antwerp, Belgium}{}{Researcher in a funded project on non-emergency medical transportation.}
+\cventry{2023 -- 2025}{VLAIO-funded healthcare mobility project}{Triptomatic}{Duffel, Belgium (remote)}{}{Lead Operations Research Expert in a funded innovation project on automated healthcare transportation planning.}
+\cventry{2019 -- 2023}{FWO-funded doctoral research}{University of Antwerp and KU Leuven}{Belgium}{}{Research Foundation Flanders funding for the doctoral project on semi-flexible demand-responsive bus services.}
+
+\section{Prizes and Awards}
+\cventry{2022}{ELAVIO scholarship}{EURO}{Monterrey, Mexico}{}{Awarded the EURO scholarship to attend the ELAVIO summer school.}
+\cventry{2020}{Best Paper Award -- finalist (2\textsuperscript{nd} place)}{University of Antwerp}{Antwerp, Belgium}{}{Doctoral Day of the Faculty of Business and Applied Economics.}
+
+%----------------------------------------------------------------------------------
+\section{Technical Skills}
+\cvitem{Programming}{\textit{Proficient:} C++, Python (NumPy, pandas, SciPy, matplotlib), Java, R, MATLAB\\
+  \textit{Basic:} SQL, Julia, mongocxx (MongoDB C++ driver)}
+\cvitem{Optimisation}{\textit{Proficient:} Gurobi, CPLEX, Hexaly (exact and heuristic solvers)\\
+  \textit{Intermediate:} AMPL (modelling language)\\
+  \textit{Methods:} MIP, column generation, large neighbourhood search, simulated annealing, GRASP, tabu search, real-time re-optimisation}
+\cvitem{Systems \& tools}{\textit{Proficient:} \LaTeX, Git/GitHub/Bitbucket (version control, CI/CD), API development\\
+  \textit{Intermediate:} Docker (containerised services), OSRM/OpenStreetMap (GIS routing), Jira (project management)}
+\cvitem{Simulation}{\textit{Elementary:} FlexSim (discrete-event simulation), VISSIM (microscopic traffic simulation), Maple}
+\cvitem{Office}{Excel/Sheets, PowerPoint/Slides, Word/Docs, Teams/Meet, Outlook/Gmail}
+
+\section{Languages}
+\cvdoubleitem{Spanish}{Native}{English}{Proficient}
+\cvdoubleitem{Dutch}{Proficient}{French}{Elementary}
+
+\end{document}

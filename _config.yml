@@ -164,6 +164,7 @@ include:
   - _pages
   - files
 exclude:
+  - cv/CV_BryanGalarza.tex
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
