@@ -192,7 +192,7 @@ const photos = [
   { src: '/images/photos/IMG_3384.JPG', caption: 'Urbanism', trip: 'china-south' },
   { src: '/images/photos/IMG_3405.JPG', caption: 'Nightlife in Guiyang', trip: 'china-south' },
   { src: '/images/photos/IMG_3415.JPG', caption: 'Guiyang scenes', trip: 'china-south' },
-  { src: '/images/photos/IMG_7186.JPG', caption: 'Li Jiang Scenes', trip: 'yunnan' },
+  { src: '/images/photos/IMG_7507.JPG', caption: 'Li Jiang Scenes', trip: 'yunnan' },
   { src: '/images/photos/IMG_7211.JPG', caption: 'Yulong Snow Mountain', trip: 'yunnan' },
   { src: '/images/photos/IMG_7260.JPG', caption: 'Shuhe', trip: 'yunnan' },
   { src: '/images/photos/IMG_7280.JPG', caption: 'Trails', trip: 'yunnan' },
